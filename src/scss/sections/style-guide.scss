@@ -1,0 +1,107 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+
+.sg-colors {
+    background: #cacaca;
+    text-align: center;
+    padding: 30px 20%;
+
+    h4 {
+        margin: 0 0 10px 0;
+        padding: 0;
+    }
+}
+
+.color-palette {
+    display: flex;
+    justify-content: space-evenly;    
+}
+
+.color-swatch {
+    display: flex;
+    flex-direction: column;
+    // text-align: center;
+    box-shadow: 0 0 5px 0 #000;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.swatch-name::before {
+    content: '';
+    height: 80px;
+    width: 130px; // Golden rectangle dimensions.
+    display: block;
+    background: lime;
+    border: 1px solid #000;
+}
+
+.sec-swatch .swatch-name::before {
+    background: #9d00ff;
+}
+
+.typography {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    h2 {
+        width: 100%;
+    }
+
+    .font-sampler {
+        text-align: center;
+    }
+}
+
+#text-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 10%;
+    justify-content: center;
+    gap: 30px;
+
+    div {
+        background: lightgreen;
+    }
+
+    #headings {
+        width: 200px;
+    }
+
+    #common-text-elements {
+        width: 800px;
+        display: flex;
+        
+        div:first-child {
+            width: 30%;
+        }
+
+        div:last-child {
+            width: 70%;
+        }
+    }
+
+    #misc-text-elements {
+        width: 400px;
+    }
+
+    #in-out-elements {
+        display: none;
+    }
+
+    #paragraphs {
+        width: calc(50% - 15px);
+    }
+
+    #lists {
+        display: flex;
+        width: calc(50% - 15px);
+    }
+}
