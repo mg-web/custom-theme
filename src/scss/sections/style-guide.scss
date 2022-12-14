@@ -7,8 +7,25 @@ h6 {
     text-align: center;
 }
 
-.sg-colors {
-    background: #cacaca;
+section > h2:first-child {
+    margin-top: 0;
+    width: 100%;
+}
+
+section {
+    padding: 30px 20% 44px;
+    text-align: center;
+
+    &:nth-child(even) {
+        background: #e0e0e0;
+    }
+}
+
+a.sg-no-style {
+    all: revert;
+}
+
+#colors {
     text-align: center;
     padding: 30px 20%;
 
@@ -26,8 +43,7 @@ h6 {
 .color-swatch {
     display: flex;
     flex-direction: column;
-    // text-align: center;
-    box-shadow: 0 0 5px 0 #000;
+    // box-shadow: 0 0 5px 0 #000;
     background: #fff;
     padding: 10px;
     border: 1px solid #000;
@@ -46,7 +62,19 @@ h6 {
     background: #9d00ff;
 }
 
-.typography {
+#buttons {
+    & > p {
+        max-width: 550px;
+        margin: 0 auto 30px;
+    }
+
+    button,
+    .btn {
+        margin: 10px 15px;
+    }
+}
+
+#typography {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -66,6 +94,10 @@ h6 {
     padding: 30px 10%;
     justify-content: center;
     gap: 30px;
+
+    h2 {
+        width: 100%;
+    }
 
     div {
         background: lightgreen;
@@ -103,5 +135,18 @@ h6 {
     #lists {
         display: flex;
         width: calc(50% - 15px);
+    }
+}
+
+#media {
+    display: flex;
+    flex-wrap: wrap;
+
+    div {
+        width: 30%;
+        background: lightcoral;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

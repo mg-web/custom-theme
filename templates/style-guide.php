@@ -6,7 +6,7 @@
 get_header(); 
 ?>
 
-<section class="sg-colors">
+<section id="colors">
     <h2>Main Color Palette</h2>
     <div class="color-palette">
         <div class="color-swatch">
@@ -117,7 +117,7 @@ get_header();
         </div>
     </div>
 </section>
-<section class="typography">
+<section id="typography">
     <h2>Typography</h2>
     <div class="font-sampler">
         <h4>Font 1: Futura</h4>
@@ -145,7 +145,29 @@ get_header();
     </div>
 </section>
 
+<section id="buttons">
+    <h2>CTA Buttons</h2>
+    <p>
+        <b>Please Note: </b>The CTA Buttons section does not include form related buttons
+        such as inputs of types submit, button, or reset. Only actual button elements and links (anchor tags)
+        that are styled to appear as buttons are displayed in this section.
+        <br>
+        <br>
+        For form input buttons please see the <a class="sg-no-style" href="#forms">Forms section</a>.
+    </p>
+
+      <a class="btn cta-1" href="#">&lt;a class="btn cta-1"&gt;</a>
+      <a class="btn cta-2" href="#">&lt;a class="btn cta-2"&gt;</a>
+      <a class="btn cta-3" href="#">&lt;a class="btn cta-3"&gt;</a>
+      <br>
+      <button type="submit">&lt;button type=submit&gt;</button>
+      <button type="button">&lt;button type=button&gt;</button>
+      <button type="button" disabled>&lt;button disabled&gt;</button>
+</section>
+
 <section id="text-content">
+    <h2>Content</h2>
+
   <div id="headings">
     <h1>Heading 1</h1>
     <h2>Heading 2</h2>
@@ -404,7 +426,9 @@ get_header();
   </div>
 </section>
 
-<section id="media-content">
+<section id="media">
+    <h2>Media</h2>
+
   <div class="images">
     No &lt;figure&gt; element:
     <br>
@@ -426,6 +450,12 @@ get_header();
     </figure>
   </div>
 
+  <div id="svgs">
+    <svg width="200px" height="200px">
+      <circle cx="100" cy="100" r="100" fill="#00fc50"></circle>
+    </svg>
+  </div>
+
   <div id="audio-elements">
     <audio controls="">audio</audio>
   </div>
@@ -435,16 +465,11 @@ get_header();
   </div>
 </section>
 
-<section id="embed-elements">
+<!-- The following section contains elements that are not commonly used and not necessary for most style guides. -->
+<!-- <section id="misc-elements">
   <div id="canvases">
     <canvas>canvas</canvas>
-  </div>
-
-  <div id="svgs">
-    <svg width="200px" height="200px">
-      <circle cx="100" cy="100" r="100" fill="#00fc50"></circle>
-    </svg>
-  </div>
+  </div>  
 
   <div id="measures">
     <meter value="2" min="0" max="10">2 out of 10</meter>
@@ -456,7 +481,7 @@ get_header();
   <div id="iframes">
     <iframe src="http://www.digitalbrent.com/" height="250" width="350"></iframe>
   </div>
-</section>
+</section> -->
 
 <section id="tables">
   <table>
@@ -646,12 +671,6 @@ get_header();
       <input type="button" value="<input type=button>">
       <input type="reset" value="<input type=reset>">
       <input type="submit" value="<input disabled>" disabled>
-      <br>
-      <br>
-      <button type="submit">&lt;button type=submit&gt;</button>
-      <button type="button">&lt;button type=button&gt;</button>
-      <button type="reset">&lt;button type=reset&gt;</button>
-      <button type="button" disabled>&lt;button disabled&gt;</button>
     </fieldset>
   </form>
 </section>

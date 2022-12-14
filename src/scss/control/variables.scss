@@ -2,8 +2,24 @@
 // Includes color, typography, spacing, and other variables used throughout the theme.
 //
 // Table of contents:
-// 1. Colors
+// 1. Colors & Gradients
 // 2. Typography
-// 3. Spacing (padding, margins, and gaps)
-// 4. Other Variables
+// 3. Theme Spacing (padding, margins, and gaps)
+// 4. Other Variables (border radius, etc.)
 
+$white:         #fff;
+$black:         #000;
+$mg_red:        #ed1c24;
+$mg_crimson:    #5c0000;
+$mg_royal_blue: #64b7da;
+$mg_ocean_blue: #538CB0;
+$mg_navy:       #20303B;
+
+$primary:       $mg_red;
+$secondary:     $mg_royal_blue;
+$tertiary:      $mg_navy;
+$accent_1:      $mg_crimson;
+$accent_2:      $mg_ocean_blue;
+
+
+$corner_rounding: 8px;
