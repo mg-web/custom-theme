@@ -1,0 +1,9 @@
+.mg-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    h2 {
+        flex-basis: 100%;
+    }
+}

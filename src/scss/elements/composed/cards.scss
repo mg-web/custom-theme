@@ -1,5 +1,19 @@
 .card {
-    background: red;
-    border-radius: 12px;
-    color: aqua;
+    border: 2px solid $black;
+    border-radius: 10px;
+    background: $white;
+    overflow: hidden;
+    flex-basis: 30%;
+
+    &-image {
+
+    }
+
+    &-title {
+
+    }
+
+    &-detail {
+
+    }
 }
