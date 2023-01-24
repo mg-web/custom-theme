@@ -23,10 +23,10 @@ get_header();
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
 
-        <div class="color-swatch">
+        <div class="color-swatch ter-swatch">
             <h4>Tertiary</h4>
-            <div class="swatch-name">lime-green</div>
-            <div class="swatch-hex">#00FC50</div>
+            <div class="swatch-name">Sunset Orange</div>
+            <div class="swatch-hex">#FFA834</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
 
@@ -119,8 +119,8 @@ get_header();
 </section>
 <section id="typography">
     <h2>Typography</h2>
-    <div class="font-sampler">
-        <h4>Font 1: Futura</h4>
+    <div class="font-sampler first-font">
+        <h4>Font 1: <a href="#">Source Sans Pro</a></h4>
         A B C D E F G H I J K L M<br>
         O P Q R S T U V W X Y Z<br>
         a b c d e f g h i j k l m<br>
@@ -131,8 +131,8 @@ get_header();
         The quick brown fox jumped<br>
         over the lazy dog!
     </div>
-    <div class="font-sampler">
-        <h4>Font 2: Helvetica</h4>
+    <div class="font-sampler second-font">
+        <h4>Font 2: <a href="#">PT Serif</a></h4>
         A B C D E F G H I J K L M<br>
         O P Q R S T U V W X Y Z<br>
         a b c d e f g h i j k l m<br>
@@ -371,59 +371,6 @@ get_header();
       </dl>
     </div>
   </div>
-
-  <div id="articles">
-    <article>
-      <header>
-        <h1>Article h1 in article header</h1>
-      </header>
-
-      <div class="article-content">
-        <p>
-          Some article text. With a bonus <a href="#">link</a> just for the hell of it. This is a regulare ol' div with the
-          <em>"article-content"</em> class. Deceivingly as or oh much yikes testy reminantly thick acutely trod tortoise darn
-          frenetically spelled interwove jay less alas alas and wherever along underneath lingeringly as contumacious directed along and.
-        </p>
-
-        <img class="alignleft" src="http://placekitten.com/220/220" alt="Test Image Cat" title="This is a cat!">
-
-        <p>
-          This is more stuff inside a paragraph tag. Have you noticed how all the theme images are cats? I'm not really a
-          cat person, but I think most of these are kind of cool looking. I especially like the space cats. Have you ever
-          heard of Nyan Cat? It's like a little 8-bit pixel cat with a toaster pastry for a body. It flies endlessly through
-          space, emitting a rainbow trail.
-        </p>
-
-        <p>
-          What was I going to type here? Oh, right! Something about the superiority of texas toast to regular toast. If you
-          have never gad texas toast, you are really missing out. Waffles are also quite amazing, but I assume most people
-          have had them.
-        </p>
-
-        <figure class="alignright">
-          <img src="http://placekitten.com/170/220" alt="Test Image Cat" title="This is the Title">
-          <figcaption>This image has a caption.</figcaption>
-        </figure>
-
-        <p>
-          Greatly ate titillating various via kangaroo the rancorously barked beneath gosh bawdy kookaburra well independent
-          censoriously and crane waked less and far unsuccessfully eagle and the therefore more diabolic around coquettishly
-          jeepers well memorably far while more slapped, as if he'd never seen a chocolate lab do they hokey-pokey for twenty bucks.
-          Far after around burst enchanting gregariously inclusively blanched and a hare steady tarantula that aside gawked
-          past jeez one less and breathless within guinea much eel musically noble tiger that a.
-        </p>
-
-        <p>
-          Stark far and the ambitious picked and beneath without far deservedly so reprehensively much lizard until telepathic
-          barring much some gawked interminable hence oversold excruciating about grimily earthworm rattlesnake macaw.
-        </p>
-      </div>
-
-      <footer>
-        Article Footer
-      </footer>
-    </article>
-  </div>
 </section>
 
 <section id="media">
@@ -432,7 +379,8 @@ get_header();
   <div class="images">
     No &lt;figure&gt; element:
     <br>
-    <img src="http://placekitten.com/480/480" alt="Image alt text">
+    <!-- All images should have defined width and height. -->
+    <img src="http://placekitten.com/480/480" width=420 height=420 alt="Image alt text">
   </div>
 
   <div class="images">
@@ -661,9 +609,9 @@ get_header();
       <label for="">Datetime-local Input</label>
       <input type="datetime-local" name="" value="1970-01-01T00:00">
     </fieldset>
-</form>
+  </form>
 
-<form id="action-buttons">
+  <form id="action-buttons">
     <fieldset>
       <legend>Action Buttons</legend>
 
@@ -674,6 +622,59 @@ get_header();
     </fieldset>
   </form>
 </section>
+
+<div id="articles">
+    <article>
+      <header>
+        <h1>Article h1 in article header</h1>
+      </header>
+
+      <div class="article-content">
+        <p>
+          Some article text. With a bonus <a href="#">link</a> just for the hell of it. This is a regulare ol' div with the
+          <em>"article-content"</em> class. Deceivingly as or oh much yikes testy reminantly thick acutely trod tortoise darn
+          frenetically spelled interwove jay less alas alas and wherever along underneath lingeringly as contumacious directed along and.
+        </p>
+
+        <img class="alignleft" src="http://placekitten.com/220/220" alt="Test Image Cat" title="This is a cat!">
+
+        <p>
+          This is more stuff inside a paragraph tag. Have you noticed how all the theme images are cats? I'm not really a
+          cat person, but I think most of these are kind of cool looking. I especially like the space cats. Have you ever
+          heard of Nyan Cat? It's like a little 8-bit pixel cat with a toaster pastry for a body. It flies endlessly through
+          space, emitting a rainbow trail.
+        </p>
+
+        <p>
+          What was I going to type here? Oh, right! Something about the superiority of texas toast to regular toast. If you
+          have never gad texas toast, you are really missing out. Waffles are also quite amazing, but I assume most people
+          have had them.
+        </p>
+
+        <figure class="alignright">
+          <img src="http://placekitten.com/170/220" alt="Test Image Cat" title="This is the Title">
+          <figcaption>This image has a caption.</figcaption>
+        </figure>
+
+        <p>
+          Greatly ate titillating various via kangaroo the rancorously barked beneath gosh bawdy kookaburra well independent
+          censoriously and crane waked less and far unsuccessfully eagle and the therefore more diabolic around coquettishly
+          jeepers well memorably far while more slapped, as if he'd never seen a chocolate lab do they hokey-pokey for twenty bucks.
+          Far after around burst enchanting gregariously inclusively blanched and a hare steady tarantula that aside gawked
+          past jeez one less and breathless within guinea much eel musically noble tiger that a.
+        </p>
+
+        <p>
+          Stark far and the ambitious picked and beneath without far deservedly so reprehensively much lizard until telepathic
+          barring much some gawked interminable hence oversold excruciating about grimily earthworm rattlesnake macaw.
+        </p>
+      </div>
+
+      <footer>
+        Article Footer
+      </footer>
+    </article>
+  </div>
 
 <p style="grid-column: span 12; text-align: center;">Created by <a href="http://digitalbrent.com/">DigitalBrent</a></p>
 </div>

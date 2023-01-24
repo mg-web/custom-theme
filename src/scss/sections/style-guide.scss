@@ -62,6 +62,10 @@ a.sg-no-style {
     background: #9d00ff;
 }
 
+.ter-swatch .swatch-name::before {
+    background: #ffa834;
+}
+
 #buttons {
     & > p {
         max-width: 550px;
@@ -85,6 +89,18 @@ a.sg-no-style {
 
     .font-sampler {
         text-align: center;
+
+        &.first-font {
+            font-family: 'Source Sans Pro', sans-serif;
+            
+            h4 {
+                font-family: 'Source Sans Pro', sans-serif;
+            }
+        }
+        
+        &.second-font {
+            font-family: 'PT Serif', serif;
+        }
     }
 }
 
@@ -129,24 +145,35 @@ a.sg-no-style {
     }
 
     #paragraphs {
-        width: calc(50% - 15px);
+        width: calc(35% - 15px);
+        text-align: left;
     }
 
     #lists {
         display: flex;
-        width: calc(50% - 15px);
+        width: calc(65% - 15px);
+        text-align: left;
+        gap: 30px;
     }
 }
 
 #media {
+    padding: 30px 10%;
     display: flex;
     flex-wrap: wrap;
+    gap: 2%;
 
     div {
-        width: 30%;
+        width: 32%;
         background: lightcoral;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
+        justify-content: flex-start;
     }
+}
+
+#tables {
+    display: flex;
+    justify-content: center;
 }
