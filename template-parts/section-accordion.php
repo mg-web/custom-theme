@@ -11,6 +11,8 @@
 ?>
 
 <section class="mg-accordion">
+    <h2>Accordion Section</h2>
+
     <details>
         <summary>This the first accordion item!</summary>
         <div class="detail-content">
