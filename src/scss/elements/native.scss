@@ -17,3 +17,37 @@ h4, h5, h6 {
 ul, ol, dl {
     margin: 0;
 }
+
+details {
+    text-align: left; // Default is centered for some reason.
+    overflow: hidden;
+
+    &:hover {
+        cursor: pointer;
+    }
+    
+    &:first-child {
+        border-radius: 10px 10px 0 0;
+        border: 2px solid $black;
+    }
+
+    &:not(:first-child) {
+        border: 2px solid $black;
+        border-width: 0 2px 2px 2px;
+    }
+
+    &:last-child {
+        border-radius: 0 0 10px 10px;
+    }
+
+    summary {
+        background-color: #808080;
+        padding: 1em;
+        color: $white;
+    }
+
+    .detail-content {
+        border-width: 0 2px 0 2px;
+        padding: 1.25em;
+    }
+}

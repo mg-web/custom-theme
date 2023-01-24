@@ -676,6 +676,10 @@ get_header();
     </article>
   </div>
 
+  <?php
+    get_template_part( 'template-parts/section-accordion');
+  ?>
+
 <p style="grid-column: span 12; text-align: center;">Created by <a href="http://digitalbrent.com/">DigitalBrent</a></p>
 </div>
 
