@@ -37,3 +37,4 @@
 </head>
 
 <body>
+<?php get_template_part( 'template-parts/section-header'); ?>

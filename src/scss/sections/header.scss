@@ -1,0 +1,53 @@
+#site-header {
+    // padding: 0 12%;
+    display: grid;
+    grid-template-columns: minmax(0, calc((100vw - $content_max_width)/2)) 1fr 1fr 1fr minmax(0, calc((100vw - $content_max_width)/2));
+    grid-template-areas: // space-r & space-l are just filler columns.
+    'space-l top top top space-r'
+    'space-l brand ctas ctas space-r'
+    'space-l brand menu menu menu';
+
+    .site-branding {
+        grid-area: brand;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        max-width: 300px;
+        text-align: center;
+
+        background: lime;
+    }
+}
+
+#tag-line {
+    margin-bottom: 0;
+}
+
+#top-nav {
+    grid-area: top;
+    background: $primary;
+}
+
+#header-ctas {
+    grid-area: ctas;
+
+    background: lime;
+}
+
+#primary-nav {
+    grid-area: menu;
+    background: $secondary;
+}
+
+#top-nav,
+#header-ctas,
+#primary-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    a {
+        margin-left: 15px;
+    }
+}

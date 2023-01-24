@@ -4,7 +4,7 @@
 // Table of contents:
 // 1. Colors & Gradients
 // 2. Typography
-// 3. Theme Spacing (padding, margins, and gaps)
+// 3. Theme Spacing (padding / margins / gaps)
 // 4. Other Variables (border radius, etc.)
 
 $white:         #fff;
@@ -22,7 +22,11 @@ $accent_1:      $mg_crimson;
 $accent_2:      $mg_ocean_blue;
 
 
-$corner_rounding: 8px;
+$corner_rounding: 10px;
 
 // 2. Typography
 // https://web.dev/font-best-practices/
+
+
+// 3. Theme Spacing (padding / margins / gaps)
+$content_max_width: 1600px;
