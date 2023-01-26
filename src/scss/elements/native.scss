@@ -24,9 +24,10 @@ ul, ol, dl {
     margin: 0;
 }
 
-details {
+details { // Should this go in accordion.scss?
     text-align: left; // Default is centered for some reason.
     overflow: hidden;
+    transition: all .5s linear;
 
     &:hover {
         cursor: pointer;
@@ -46,6 +47,13 @@ details {
         border-radius: 0 0 10px 10px;
     }
 
+    &[open] {
+        .detail-content {
+            height: auto;
+            background: lime;
+        }
+    }
+
     summary {
         background-color: #808080;
         padding: 1em;
@@ -55,5 +63,7 @@ details {
     .detail-content {
         border-width: 0 2px 0 2px;
         padding: 1.25em;
+        height: 0;
+        transition: all .5s linear;
     }
 }
