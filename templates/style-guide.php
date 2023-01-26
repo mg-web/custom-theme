@@ -679,6 +679,7 @@ get_header();
   <?php
     get_template_part( 'template-parts/section-accordion');
     get_template_part( 'template-parts/section-cards');
+    get_template_part( 'template-parts/section-reviews');
   ?>
 
 <p style="grid-column: span 12; text-align: center;">Created by <a href="http://digitalbrent.com/">DigitalBrent</a></p>
