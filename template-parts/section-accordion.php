@@ -11,7 +11,7 @@
 ?>
 
 <section class="mg-accordion">
-    <h2>Accordion Section</h2>
+    <h2>FAQ Section (Details Accordion)</h2>
 
     <details>
         <summary>This the first accordion item!</summary>
