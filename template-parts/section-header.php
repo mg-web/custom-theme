@@ -56,36 +56,6 @@
             <a href="#">Service Areas</a>
             <a href="#">Financing</a>
             <a href="#">Contact Us</a>
-            <table>
-                <thead>
-                  <tr>
-                    <th>sdfsd</th>
-                    <th>sdfsd</th>
-                    <th>fdhgdsfgh</th>
-                    <th>asdf</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>asdfa</td>
-                    <td>sdfsdf</td>
-                    <td>sdfsd</td>
-                    <td>gasdgf</td>
-                  </tr>
-                  <tr>
-                    <td>dfasdf</td>
-                    <td>a</td>
-                    <td>sdf</td>
-                    <td>gsdg</td>
-                  </tr>
-                  <tr>
-                    <td>asdf</td>
-                    <td>gSDG</td>
-                    <td>DSGGH</td>
-                    <td>aasdfg</td>
-                  </tr>
-                </tbody>
-            </table>
         </div>
     </div>
 </header>

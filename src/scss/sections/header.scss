@@ -152,10 +152,10 @@ $transition-delay: 0.05s;
   & ~ .nav {
     margin-bottom: 100px;
     pointer-events: auto;
-    transform: translate(50px, 50px);
+    margin: 14px 25px 0 60px;
 
     // Restoring nav items from "lines" in the menu icon
-    a,table {
+    a {
       color: $white;
       letter-spacing: 0;
       height: 40px;
@@ -232,7 +232,7 @@ $transition-delay: 0.05s;
 /* Menu */
 
 .nav {
-  display: inline-block;
+  display: grid;
   margin: 25px 25px 20px;
   // Don't want pointer-events as menu is closed
   pointer-events: none;
@@ -240,7 +240,7 @@ $transition-delay: 0.05s;
 }
 
 // Showing nav items as lines, making up the hamburger menu icon
-.nav a, .nav table {
+.nav a {
   position: relative;
   display: inline-block;
   float: left;
