@@ -47,13 +47,6 @@ details { // Should this go in accordion.scss?
         border-radius: 0 0 10px 10px;
     }
 
-    &[open] {
-        .detail-content {
-            height: auto;
-            // background: lime;
-        }
-    }
-
     summary {
         background-color: #808080;
         padding: 1em;
@@ -63,7 +56,5 @@ details { // Should this go in accordion.scss?
     .detail-content {
         border-width: 0 2px 0 2px;
         padding: 1.25em;
-        height: 0;
-        transition: all .5s linear;
     }
 }
