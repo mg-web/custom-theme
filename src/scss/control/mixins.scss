@@ -1,0 +1,37 @@
+/* Uses t-shirt sizes for easy memory. */
+
+@mixin sm {
+    @media (min-width: 412px) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width: 1000px) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: 1360px) {
+        @content;
+    }
+}
+
+@mixin xxl {
+    @media (min-width: 1600px) {
+        @content;
+    }
+}
+
+@mixin xxxl {
+    @media (min-width: 1920px) {
+        @content;
+    }
+}

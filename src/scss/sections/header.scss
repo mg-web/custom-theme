@@ -1,43 +1,26 @@
 #site-header {
-    // padding: 0 12%;
     display: grid;
-    grid-template-columns: minmax(0, calc((100vw - $content_max_width)/2)) 1fr 1fr 1fr minmax(0, calc((100vw - $content_max_width)/2));
+    grid-template-rows: 40px auto 50px;
+    grid-template-columns: minmax(0, calc((100vw - $content_max_width) / 2)) 1fr minmax(100px, 300px) 1fr minmax(0, calc((100vw - $content_max_width) / 2));
     grid-template-areas: // space-r & space-l are just filler columns.
-    'space-l top top top space-r'
+    'top top top top top'
     'space-l brand ctas ctas space-r'
-    'space-l brand menu menu menu';
+    'space-l brand space menu menu';
 
     .site-branding {
         grid-area: brand;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        justify-content: space-around;
+        justify-content: space-evenly;
         max-width: 300px;
         text-align: center;
-
-        background: lime;
+        min-height: 150px;
     }
 }
 
 #tag-line {
     margin-bottom: 0;
-}
-
-#top-nav {
-    grid-area: top;
-    background: $primary;
-}
-
-#header-ctas {
-    grid-area: ctas;
-
-    background: lime;
-}
-
-#primary-nav {
-    grid-area: menu;
-    background: $secondary;
 }
 
 #top-nav,
@@ -50,4 +33,25 @@
     a {
         margin-left: 15px;
     }
+}
+
+#top-nav {
+    grid-area: top;
+    background: $primary;
+    padding: 0 calc((100vw - $content_max_width) / 2);
+    height: 40px;
+}
+
+#header-ctas {
+    grid-area: ctas;
+    background: lime;
+}
+
+#primary-nav {
+    grid-area: menu;
+    background: $secondary;
+    padding-right: calc((100vw - $content_max_width) / 2);
+    align-self: flex-end;
+    height: 50px;
+    clip-path: polygon(50px 0, 100% 0%, 100% 100%, 0% 100%);
 }

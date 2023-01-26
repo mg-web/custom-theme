@@ -29,4 +29,4 @@ $corner_rounding: 10px;
 
 
 // 3. Theme Spacing (padding / margins / gaps)
-$content_max_width: 1600px;
+$content_max_width: 1600px; // If vertical scrollbar is present it will be about 15px smaller.
