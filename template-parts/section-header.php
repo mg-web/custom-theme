@@ -16,9 +16,6 @@
         <a href="#">About Us</a>
     </nav>
 
-    <!-- <div class="spacer-l"></div> -->
-    <!-- <div class="spacer-r"></div> -->
-
     <div class="site-branding">
         <img src="https://digitalbrent.com/generic-hvac.png" alt="Generic HVAC Logo" width="300" height="72">
         <p id="tag-line">This is where the tagline would go if there were one, but there's not!</p>
@@ -37,4 +34,58 @@
         <a href="#">Financing</a>
         <a href="#">Contact Us</a>
     </nav>
+
+    <div id="mob-menu">
+        <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
+        <input id="toggle" type="checkbox">
+
+        <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
+
+        <!-- This label is tied to the checkbox, and it will contain the toggle "buttons" -->
+        <label class="toggle-container" for="toggle">
+            <!-- If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
+            <span class="button button-toggle"></span>
+        </label>
+
+        <!-- The nav menu -->
+        <div class="nav">
+            <a href="#">Heating</a>
+            <a href="#">Cooling</a>
+            <a href="#">Air Quality</a>
+            <a href="#">Systems</a>
+            <a href="#">Service Areas</a>
+            <a href="#">Financing</a>
+            <a href="#">Contact Us</a>
+            <table>
+                <thead>
+                  <tr>
+                    <th>sdfsd</th>
+                    <th>sdfsd</th>
+                    <th>fdhgdsfgh</th>
+                    <th>asdf</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>asdfa</td>
+                    <td>sdfsdf</td>
+                    <td>sdfsd</td>
+                    <td>gasdgf</td>
+                  </tr>
+                  <tr>
+                    <td>dfasdf</td>
+                    <td>a</td>
+                    <td>sdf</td>
+                    <td>gsdg</td>
+                  </tr>
+                  <tr>
+                    <td>asdf</td>
+                    <td>gSDG</td>
+                    <td>DSGGH</td>
+                    <td>aasdfg</td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </header>
