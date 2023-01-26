@@ -22,7 +22,9 @@
     </div>
 
     <div id="header-ctas">
-        Maybe this area needs content?
+        <a class="btn cta-2" href="#">Whatever</a>
+        <a class="btn cta-2" href="#">Something Else</a>
+        <a class="btn cta-1" href="#">Call Now</a>
     </div>
 
     <nav id="primary-nav">

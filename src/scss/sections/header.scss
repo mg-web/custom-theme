@@ -55,6 +55,8 @@
 
     a {
         margin-left: 15px;
+        color: $white;
+        text-decoration: none;
     }
 }
 
@@ -67,7 +69,6 @@
 
 #header-ctas {
     grid-area: ctas;
-    background: lime;
 }
 
 #primary-nav {
@@ -104,6 +105,10 @@ $transition-delay: 0.05s;
   background-color: #8e8e8e;
   overflow: hidden;
   width: 100%;
+
+  @include xxl {
+      display: none;
+  }
 }
 
 
