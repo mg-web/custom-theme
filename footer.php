@@ -21,9 +21,9 @@
         get_template_part( 'template-parts/section', 'financing' );
     endif; ?> 
     
-    <?php if( !is_404() && !is_page_template( 'templates/careers.php' ) && !is_singular('careers') ) :
-        get_template_part( 'template-parts/section', 'reviews' );  
-    endif; ?>
+    <?php // if( !is_404() && !is_page_template( 'templates/careers.php' ) && !is_singular('careers') ) :
+        // get_template_part( 'template-parts/section', 'reviews' );  
+    // endif; ?>
 
     <?php if(is_front_page() || is_page_template( array('templates/product-category.php')) ) : 
         get_template_part( 'template-parts/section', 'careers' ); 
