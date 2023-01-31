@@ -43,23 +43,29 @@ if( function_exists('acf_add_options_page') ) {
 		'redirect'    => false
 	));
 
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Hero',
+		'menu_title'	=> 'Hero',
+		'parent_slug'	=> 'mg-sections',
+	));
+
 	/**
 	 * The following code was what Socius wrote. The code above is what I added.
 	 */
-	acf_add_options_page(array(
-		'page_title'  => 'Theme General Settings',
-		'menu_title'  => 'Theme Options',
-		'menu_slug'   => 'theme-general-settings',
-		'capability'  => 'edit_posts',
-		'redirect'    => false
-	));
+	// acf_add_options_page(array(
+	// 	'page_title'  => 'Theme General Settings',
+	// 	'menu_title'  => 'Theme Options',
+	// 	'menu_slug'   => 'theme-general-settings',
+	// 	'capability'  => 'edit_posts',
+	// 	'redirect'    => false
+	// ));
 
 	//Add subpage
-	acf_add_options_sub_page(array(
-		'page_title' 	=> 'Subpage Title',
-		'menu_title'	=> 'Subpage Title',
-		'parent_slug'	=> 'theme-general-settings',
-	));
+	// acf_add_options_sub_page(array(
+	// 	'page_title' 	=> 'Subpage Title',
+	// 	'menu_title'	=> 'Subpage Title',
+	// 	'parent_slug'	=> 'theme-general-settings',
+	// ));
 
 	// Developer
 	acf_add_options_sub_page(array(
