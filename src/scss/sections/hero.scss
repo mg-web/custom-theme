@@ -1,13 +1,22 @@
 .mg-hero {
-    background: black;
-    color: $white;
+    background: $white url('../img/diamonds.webp') repeat center;
+    color: $tertiary;
     text-align: left;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
     h1,
     h2,
     p {
         text-align: left;
     } 
+
+    .wrap {
+        background: $white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 3px #bebebe;
+        padding: 20px 20px 26px;
+    }
 
     .ctas-wrap {
         display: flex;
