@@ -3,12 +3,27 @@
     $heading = $hero['heading'] ? $hero['heading'] : FALSE;
     $subhead = $hero['subhead'] ? $hero['subhead'] : FALSE;
     $content = $hero['content'] ? $hero['content'] : FALSE;
-    // Have to do some array work to sort out ctas.
+    $btns = $hero['ctas'] ? $hero['ctas'] : FALSE;
 
 ?>
 
 <section class="mg-hero">
-    <h1><?php if($heading) { echo $heading; } ?></h1>
-    <h2><?php if($subhead) { echo $subhead; } ?></h2>
-    <p><?php if($content) {echo $content; }?></p>
+    <h1><?php if($heading) { echo $heading; }; ?></h1>
+    <h2><?php if($subhead) { echo $subhead; }; ?></h2>
+    <?php if($content) {echo $content; }; ?>
+
+    <?php 
+    if($btns) {
+        echo "<div class='ctas-wrap'>";
+        foreach ($btns as $cta) {
+            $style = $cta['cta_btn']['style'];
+            $link = $cta['cta_btn']['link']['url'];
+            $target = $cta['cta_btn']['link']['target'] ? $cta['cta_btn']['link']['target'] : '_self';
+            $txt = $cta['cta_btn']['link']['title'] ? $cta['cta_btn']['link']['title'] : "Click Here!";
+
+            echo "<a class='btn " . $style . "' href='" . esc_html($link) . "' target='" . esc_html($target) . "'>" . esc_html($txt) . "</a>";
+        }
+        echo "</div>";        
+    };
+    ?>
 </section>

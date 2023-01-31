@@ -1,10 +1,15 @@
 .mg-hero {
     background: black;
-    
+    color: $white;
+    text-align: left;
+
     h1,
     h2,
     p {
         text-align: left;
-        color: $white;
-    }  
+    } 
+
+    .ctas-wrap {
+        display: flex;
+    }
 }
