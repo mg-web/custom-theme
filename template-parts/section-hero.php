@@ -11,8 +11,4 @@
     <h1><?php if($heading) { echo $heading; } ?></h1>
     <h2><?php if($subhead) { echo $subhead; } ?></h2>
     <p><?php if($content) {echo $content; }?></p>
-    
-    ?>
-    <a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
-<?php endif; ?>
 </section>
