@@ -12,33 +12,33 @@ get_header();
         <div class="color-swatch">
             <h4>Primary</h4>
             <div class="swatch-block primary"></div>
-            <div class="swatch-hex"></div>
+            <div class="swatch-hex">???</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
 
         <div class="color-swatch">
             <h4>Secondary</h4>
             <div class="swatch-block secondary"></div>
-            <div class="swatch-hex">#00FC50</div>
+            <div class="swatch-hex">???</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
 
         <div class="color-swatch">
             <h4>Tertiary</h4>
             <div class="swatch-block tertiary"></div>
-            <div class="swatch-hex">#FFA834</div>
+            <div class="swatch-hex">???</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
 
         <div class="color-swatch">
             <h4>Accent 1</h4>
-            <div class="swatch-hex">#00FC50</div>
+            <div class="swatch-hex">???</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
 
         <div class="color-swatch">
             <h4>Accent 2</h4>
-            <div class="swatch-hex">#00FC50</div>
+            <div class="swatch-hex">???</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
     </div>
