@@ -13,7 +13,7 @@ get_header();
             <h4>Primary</h4>
             <div class="swatch-block primary"></div>
             <div class="swatch-name">$primary</div>
-            <div class="swatch-hex">???</div>
+            <div class="swatch-hex" onclick="clip()">???</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
 
@@ -721,7 +721,6 @@ get_header();
   swatches.each(function(){
     let rgb_color = jQuery(this).css("background-color");
     let hex_color = rgb2hex(rgb_color);
-    // console.log(hex_color);
     jQuery(this).find('~ .swatch-hex').html(hex_color);
     jQuery(this).find('~ .swatch-rgb').html(rgb_color);
   });
