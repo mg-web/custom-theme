@@ -305,7 +305,7 @@ get_header();
 
   <div id="lists">
     <div>
-      Unordered List:
+      <h4>Unordered List:</h4>
       <ul>
         <li>List Item</li>
         <li>
@@ -341,7 +341,7 @@ get_header();
     </div>
 
     <div>
-      Ordered List:
+      <h4>Ordered List:</h4>
       <ol>
         <li>List Item</li>
         <li>
@@ -379,16 +379,22 @@ get_header();
     </div>
 
     <div>
-      Definition List:
+      <h4>Definition List:</h4>
       <dl>
-        <dt>Definition List Title</dt>
-        <dd>This is a definition list division.</dd>
+        <dt>This line is a <b>&lt;dt&gt;</b>, also called a <b>definition title.</b></dt>
+        <dd>This is the definition part of the definition list. It is represented by the <b>&lt;dd&gt;</b> tag.</dd>
         <dt>Bacon</dt>
         <dd>A delicious breakfast food. Some might say it's the best breakfast food.</dd>
         <dt>Brent Blackwood</dt>
         <dd>The awesome designer who came up with this style guide.</dd>
         <dt>Red Hot Chili Peppers</dt>
         <dd>Formerly one of the greatest bands of all time.</dd>
+        <dt>Lily McBoogerhead</dt>
+        <dd>
+          The greatest dog of all time. A sweet pup who also gets into a lot of trouble. At the time of writing
+          this, she is currently chewing on the wall. Yes, you read that right - the wall. Heaven help me and
+          my poor wallet! Oh woe is me! The horror... The horror!
+        </dd>
       </dl>
     </div>
   </div>
@@ -419,7 +425,7 @@ get_header();
     </figure>
   </div>
 
-  <div id="svgs">
+  <!-- <div id="svgs">
     <svg width="200px" height="200px">
       <circle cx="100" cy="100" r="100" fill="#00fc50"></circle>
     </svg>
@@ -431,10 +437,9 @@ get_header();
 
   <div id="video-elements">
     <video controls="">video</video>
-  </div>
+  </div> -->
 </section>
 
-<!-- The following section contains elements that are not commonly used and not necessary for most style guides. -->
 <!-- <section id="misc-elements">
   <div id="canvases">
     <canvas>canvas</canvas>
@@ -602,7 +607,7 @@ get_header();
     </fieldset>
   </form>
 
-  <form id="html5-inputs">
+  <!-- <form id="html5-inputs">
     <fieldset>
       <legend>HTML5 Inputs</legend>
 
@@ -630,7 +635,7 @@ get_header();
       <label for="">Datetime-local Input</label>
       <input type="datetime-local" name="" value="1970-01-01T00:00">
     </fieldset>
-  </form>
+  </form> -->
 
   <form id="action-buttons">
     <fieldset>

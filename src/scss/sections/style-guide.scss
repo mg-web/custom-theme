@@ -153,16 +153,11 @@ a.sg-no-style {
 #text-content {
     display: flex;
     flex-wrap: wrap;
-    padding: 30px 10%;
     justify-content: center;
     gap: 30px;
 
     h2 {
         width: 100%;
-    }
-
-    div {
-        background: lightgreen;
     }
 
     #headings {
@@ -183,6 +178,7 @@ a.sg-no-style {
     }
 
     #misc-text-elements {
+        display: none;
         width: 400px;
     }
 
@@ -191,13 +187,13 @@ a.sg-no-style {
     }
 
     #paragraphs {
-        width: calc(35% - 15px);
+        // width: calc(35% - 15px);
         text-align: left;
     }
 
     #lists {
         display: flex;
-        width: calc(65% - 15px);
+        width: 100%;
         text-align: left;
         gap: 30px;
     }
@@ -211,7 +207,6 @@ a.sg-no-style {
 
     div {
         width: 32%;
-        background: lightcoral;
         display: flex;
         flex-direction: column;
         align-items: center;
