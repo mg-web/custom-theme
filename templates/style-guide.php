@@ -11,35 +11,33 @@ get_header();
     <div class="color-palette">
         <div class="color-swatch">
             <h4>Primary</h4>
-            <div class="swatch-name">Neon Green</div>
-            <div class="swatch-hex">#00FC50</div>
+            <div class="swatch-block primary"></div>
+            <div class="swatch-hex"></div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
 
-        <div class="color-swatch sec-swatch">
+        <div class="color-swatch">
             <h4>Secondary</h4>
-            <div class="swatch-name">Amethyst</div>
+            <div class="swatch-block secondary"></div>
             <div class="swatch-hex">#00FC50</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
 
-        <div class="color-swatch ter-swatch">
+        <div class="color-swatch">
             <h4>Tertiary</h4>
-            <div class="swatch-name">Sunset Orange</div>
+            <div class="swatch-block tertiary"></div>
             <div class="swatch-hex">#FFA834</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
 
         <div class="color-swatch">
             <h4>Accent 1</h4>
-            <div class="swatch-name">lime-green</div>
             <div class="swatch-hex">#00FC50</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
 
         <div class="color-swatch">
             <h4>Accent 2</h4>
-            <div class="swatch-name">lime-green</div>
             <div class="swatch-hex">#00FC50</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
@@ -49,21 +47,18 @@ get_header();
     <div class="color-palette">
         <div class="color-swatch">
             <h4>Aux 1</h4>
-            <div class="swatch-name">Neon Green</div>
             <div class="swatch-hex">#00FC50</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
 
         <div class="color-swatch">
             <h4>Aux 2</h4>
-            <div class="swatch-name">Amethyst</div>
             <div class="swatch-hex">#00FC50</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
 
         <div class="color-swatch">
             <h4>Aux 3</h4>
-            <div class="swatch-name">lime-green</div>
             <div class="swatch-hex">#00FC50</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
@@ -72,31 +67,26 @@ get_header();
     <h2>Tonal Color Palette</h2>
     <div class="color-palette">
         <div class="color-swatch">
-            <div class="swatch-name">Neon Green</div>
             <div class="swatch-hex">#00FC50</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
 
         <div class="color-swatch">
-            <div class="swatch-name">Amethyst</div>
             <div class="swatch-hex">#00FC50</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
 
         <div class="color-swatch">
-            <div class="swatch-name">lime-green</div>
             <div class="swatch-hex">#00FC50</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
 
         <div class="color-swatch">
-            <div class="swatch-name">lime-green</div>
             <div class="swatch-hex">#00FC50</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
 
         <div class="color-swatch">
-            <div class="swatch-name">lime-green</div>
             <div class="swatch-hex">#00FC50</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
@@ -685,5 +675,25 @@ get_header();
 
 <p style="grid-column: span 12; text-align: center;">Created by <a href="http://digitalbrent.com/">DigitalBrent</a></p>
 </div>
+
+<script>
+  let swatches = jQuery(".swatch-block");
+
+  function rgb2hex(rgb) {
+    rgb = rgb.match(/^rgba?[\s+]?\([\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?/i);
+    return (rgb && rgb.length === 4) ? "#" +
+    ("0" + parseInt(rgb[1],10).toString(16)).slice(-2) +
+    ("0" + parseInt(rgb[2],10).toString(16)).slice(-2) +
+    ("0" + parseInt(rgb[3],10).toString(16)).slice(-2) : '';
+  }
+
+  swatches.each(function(){
+    let rgb_color = jQuery(this).css("background-color");
+    let hex_color = rgb2hex(rgb_color);
+    // console.log(hex_color);
+    jQuery(this).find('~ .swatch-hex').html(hex_color);
+    jQuery(this).find('~ .swatch-rgb').html(rgb_color);
+  });
+</script>
 
 <?php get_footer();

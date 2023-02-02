@@ -49,21 +49,19 @@ a.sg-no-style {
     border: 1px solid #000;
 }
 
-.swatch-name::before {
-    content: '';
+.swatch-block {
     height: 80px;
     width: 130px; // Golden rectangle dimensions.
-    display: block;
-    background: lime;
+    background: $primary;
     border: 1px solid #000;
 }
 
-.sec-swatch .swatch-name::before {
-    background: #9d00ff;
+.swatch-block.secondary {
+    background: $secondary;
 }
 
-.ter-swatch .swatch-name::before {
-    background: #ffa834;
+.swatch-block.tertiary {
+    background: $tertiary;
 }
 
 #buttons {
