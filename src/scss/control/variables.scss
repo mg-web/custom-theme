@@ -2,17 +2,21 @@
 // Includes color, typography, spacing, and other variables used throughout the theme.
 //
 // Table of contents:
-// 1. Colors & Gradients
-// 2. Typography
-// 3. Theme Spacing (padding / margins / gaps)
-// 4. Other Variables (border radius, etc.)
+// 1. Colors
+// 2. Gradients (mixins)
+// 3. Typography
+// 4. Theme Spacing (padding / margins / gaps)
+// 5. Other Variables (border radius, etc.)
 
-// 1. Colors & Gradients
+// 1. Colors ---------------
 $mg_red:        #ed1c24;
 $mg_crimson:    #5c0000;
 $mg_royal_blue: #64b7da;
 $mg_ocean_blue: #538CB0;
 $mg_navy:       #20303B;
+$mg_gold:       #ba9500;
+$mg_denim:      #255679;
+$mg_copper:     #928e7f;
 
 $white:         #fff;
 $lit_grey:      #bbb;
@@ -26,9 +30,22 @@ $tertiary:      $mg_navy;
 $accent_1:      $mg_crimson;
 $accent_2:      $mg_ocean_blue;
 
-$aux_1:         #808080;
-$aux_2:         #808080;
-$aux_3:         #808080;
+$aux_1:         $mg_copper;
+$aux_2:         $mg_denim;
+$aux_3:         $mg_gold;
+
+/* 2. Gradients ---------------
+For easy gradient generation check out: https://cssgradient.io/
+You can swap the colors from the above url for whatever color variables
+you've alreacy created. Please keep all gradient mixins in this file as
+they are closely associated to the color variables. */
+@mixin gradient_1() {
+    background: linear-gradient(135deg, $primary, $accent_1);  
+}
+
+@mixin gradient_2() {
+    background: linear-gradient(135deg, $secondary, $accent_2);  
+}
 
 // 2. Typography
 // https://web.dev/font-best-practices/

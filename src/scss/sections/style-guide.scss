@@ -43,10 +43,10 @@ a.sg-no-style {
 .color-swatch {
     display: flex;
     flex-direction: column;
-    // box-shadow: 0 0 5px 0 #000;
     background: #fff;
     padding: 10px;
     border: 1px solid #000;
+    align-items: center;
 }
 
 .swatch-block {
@@ -105,11 +105,11 @@ a.sg-no-style {
 }
 
 .swatch-block.grade-1 {
-    @include gradient(135deg, $primary, $accent_1);
+    @include gradient_1;
 }
 
 .swatch-block.grade-2 {
-    @include gradient(135deg, $secondary, $accent_2);
+    @include gradient_2;
 }
 
 #buttons {

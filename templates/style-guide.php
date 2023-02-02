@@ -128,13 +128,13 @@ get_header();
         <div class="color-swatch">
             <h4>Gradient 1</h4>
             <div class="swatch-block grade-1"></div>
-            <div class="swatch-name">$gradient_1</div>
+            <div class="swatch-name">@include gradient_1;</div>
         </div>
 
         <div class="color-swatch">
             <h4>Gradient 2</h4>
             <div class="swatch-block grade-2"></div>
-            <div class="swatch-name">$gradient_2</div>
+            <div class="swatch-name">@include gradient_2;</div>
         </div>
     </div>
 </section>

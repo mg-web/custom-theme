@@ -1,4 +1,4 @@
-/* Uses t-shirt sizes for easy memory. */
+// Uses t-shirt sizes for easy memory.
 
 @mixin sm {
     @media (min-width: 412px) {
@@ -34,12 +34,4 @@
     @media (min-width: 1920px) {
         @content;
     }
-}
-
-
-
-
-
-@mixin gradient($direction, $from, $to) {
-    background: linear-gradient($direction, $from, $to);  
 }
