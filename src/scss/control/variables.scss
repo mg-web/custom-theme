@@ -7,7 +7,7 @@
 // 3. Theme Spacing (padding / margins / gaps)
 // 4. Other Variables (border radius, etc.)
 
-// 1. Colors
+// 1. Colors & Gradients
 $mg_red:        #ed1c24;
 $mg_crimson:    #5c0000;
 $mg_royal_blue: #64b7da;
@@ -30,11 +30,12 @@ $aux_1:         #808080;
 $aux_2:         #808080;
 $aux_3:         #808080;
 
-$corner_rounding: 10px;
-
 // 2. Typography
 // https://web.dev/font-best-practices/
 
 
 // 3. Theme Spacing (padding / margins / gaps)
 $content_max_width: 1600px; // If vertical scrollbar is present it will be about 15px smaller.
+
+// 4. Other Variables
+$corner_rounding: 10px;

@@ -104,6 +104,14 @@ a.sg-no-style {
     background: $black;
 }
 
+.swatch-block.grade-1 {
+    @include gradient(135deg, $primary, $accent_1);
+}
+
+.swatch-block.grade-2 {
+    @include gradient(135deg, $secondary, $accent_2);
+}
+
 #buttons {
     & > p {
         max-width: 550px;

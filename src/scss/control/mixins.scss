@@ -35,3 +35,11 @@
         @content;
     }
 }
+
+
+
+
+
+@mixin gradient($direction, $from, $to) {
+    background: linear-gradient($direction, $from, $to);  
+}
