@@ -32,76 +32,94 @@ get_header();
 
         <div class="color-swatch">
             <h4>Accent 1</h4>
+            <div class="swatch-block accent-1"></div>
             <div class="swatch-hex">???</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
 
         <div class="color-swatch">
             <h4>Accent 2</h4>
+            <div class="swatch-block accent-2"></div>
             <div class="swatch-hex">???</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
     </div>
-
+<br>
+<br>
     <h2>Auxillary Color Palette</h2>
     <div class="color-palette">
         <div class="color-swatch">
             <h4>Aux 1</h4>
+            <div class="swatch-block aux-1"></div>
             <div class="swatch-hex">#00FC50</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
 
         <div class="color-swatch">
             <h4>Aux 2</h4>
+            <div class="swatch-block aux-2"></div>
             <div class="swatch-hex">#00FC50</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
 
         <div class="color-swatch">
             <h4>Aux 3</h4>
+            <div class="swatch-block aux-3"></div>
             <div class="swatch-hex">#00FC50</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
     </div>
-
+<br>
+<br>
     <h2>Tonal Color Palette</h2>
     <div class="color-palette">
         <div class="color-swatch">
+            <div class="swatch-block tonal-1"></div>
+            <div class="swatch-name">$white</div>
             <div class="swatch-hex">#00FC50</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
 
         <div class="color-swatch">
+            <div class="swatch-block tonal-2"></div>
+            <div class="swatch-name">$lit_grey</div>
             <div class="swatch-hex">#00FC50</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
 
         <div class="color-swatch">
+            <div class="swatch-block tonal-3"></div>
+            <div class="swatch-name">$grey</div>
             <div class="swatch-hex">#00FC50</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
 
         <div class="color-swatch">
+            <div class="swatch-block tonal-4"></div>
+            <div class="swatch-name">$drk_grey</div>
             <div class="swatch-hex">#00FC50</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
 
         <div class="color-swatch">
+            <div class="swatch-block tonal-5"></div>
+            <div class="swatch-name">$black</div>
             <div class="swatch-hex">#00FC50</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
     </div>
-
+<br>
+<br>
     <h2>Gradient Color Palette</h2>
     <div class="color-palette">
         <div class="color-swatch">
-            <div class="swatch-name">Neon Green</div>
+            <div class="swatch-name">$gradient-1</div>
             <div class="swatch-hex">#00FC50</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>
 
         <div class="color-swatch">
-            <div class="swatch-name">Amethyst</div>
+            <div class="swatch-name">$gradient-2</div>
             <div class="swatch-hex">#00FC50</div>
             <div class="swatch-rgb">rgb(?, ?, ?)</div>
         </div>

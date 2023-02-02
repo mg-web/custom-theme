@@ -64,6 +64,46 @@ a.sg-no-style {
     background: $tertiary;
 }
 
+.swatch-block.accent-1 {
+    background: $accent_1;
+}
+
+.swatch-block.accent-2 {
+    background: $accent_2;
+}
+
+.swatch-block.aux-1 {
+    background: $aux_1;
+}
+
+.swatch-block.aux-2 {
+    background: $aux_2;
+}
+
+.swatch-block.aux-3 {
+    background: $aux_3;
+}
+
+.swatch-block.tonal-1 {
+    background: $white;
+}
+
+.swatch-block.tonal-2 {
+    background: $lit_grey;
+}
+
+.swatch-block.tonal-3 {
+    background: $grey;
+}
+
+.swatch-block.tonal-4 {
+    background: $drk_grey;
+}
+
+.swatch-block.tonal-5 {
+    background: $black;
+}
+
 #buttons {
     & > p {
         max-width: 550px;

@@ -8,13 +8,17 @@
 // 4. Other Variables (border radius, etc.)
 
 // 1. Colors
-$white:         #fff;
-$black:         #000;
 $mg_red:        #ed1c24;
 $mg_crimson:    #5c0000;
 $mg_royal_blue: #64b7da;
 $mg_ocean_blue: #538CB0;
 $mg_navy:       #20303B;
+
+$white:         #fff;
+$lit_grey:      #bbb;
+$grey:          #808080;
+$drk_grey:      #454545;
+$black:         #000;
 
 $primary:       $mg_red;
 $secondary:     $mg_royal_blue;
@@ -22,6 +26,9 @@ $tertiary:      $mg_navy;
 $accent_1:      $mg_crimson;
 $accent_2:      $mg_ocean_blue;
 
+$aux_1:         #808080;
+$aux_2:         #808080;
+$aux_3:         #808080;
 
 $corner_rounding: 10px;
 
