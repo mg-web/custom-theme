@@ -649,7 +649,7 @@ get_header();
   </form>
 </section>
 
-<div id="articles">
+<section id="articles">
     <article>
       <header>
         <h1>Article h1 in article header</h1>
@@ -700,7 +700,7 @@ get_header();
         Article Footer
       </footer>
     </article>
-  </div>
+    </section>
 
   <?php
     get_template_part( 'template-parts/section-accordion');
