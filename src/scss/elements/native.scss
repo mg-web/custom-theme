@@ -58,3 +58,14 @@ details { // Should this go in accordion.scss?
         padding: 1.25em;
     }
 }
+
+input[type='text'] {
+    border: none;
+    padding: 0.25em 0.35em 0.15em;
+    border-radius: 5px;
+    font-size: 16px;
+
+     &:focus {
+         outline: none;
+     }
+}
