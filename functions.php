@@ -29,15 +29,19 @@ function add_defer_attribute($tag, $handle) {
 
  
 
+
+
+
+
 /**
  * Add ACF Options page
  */
 if( function_exists('acf_add_options_page') ) {
   
 	acf_add_options_page(array(
-		'page_title'  => 'MG Sections',
-		'menu_title'  => 'MG Sections',
-		'menu_slug'   => 'mg-sections',
+		'page_title'  => 'Mediagistic',
+		'menu_title'  => 'Mediagistic',
+		'menu_slug'   => 'mediagistic',
 		'capability'  => 'edit_posts',
 		'icon_url' => 'dashicons-editor-kitchensink',
 		'redirect'    => false
@@ -46,7 +50,13 @@ if( function_exists('acf_add_options_page') ) {
 	acf_add_options_sub_page(array(
 		'page_title' 	=> 'Hero',
 		'menu_title'	=> 'Hero',
-		'parent_slug'	=> 'mg-sections',
+		'parent_slug'	=> 'mediagistic',
+	));
+
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Trust',
+		'menu_title'	=> 'Trust',
+		'parent_slug'	=> 'mediagistic',
 	));
 
 	/**

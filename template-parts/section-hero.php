@@ -15,13 +15,6 @@
             if($btns) {
                 echo "<div class='ctas-wrap'>";
 
-                // $style = $btns[2]['cta_btn']['style'];
-                // $link = $btns[2]['cta_btn']['link']['url'];
-                // $target = $btns[2]['cta_btn']['link']['target'] ? $btns[2]['cta_btn']['link']['target'] : '_self';
-                // $txt = $btns[2]['cta_btn']['link']['title'] ? $btns[2]['cta_btn']['link']['title'] : "Click Here!";
-            
-                // echo "<a class='btn " . $style . "' href='" . esc_html($link) . "' target='" . esc_html($target) . "'>" . esc_html($txt) . "</a>";
-
                 foreach ($btns as $cta) {
                     $style = $cta['cta_btn']['style'];
                     $link = $cta['cta_btn']['link']['url'];

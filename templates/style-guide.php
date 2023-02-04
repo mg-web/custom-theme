@@ -707,6 +707,7 @@ get_header();
     get_template_part( 'template-parts/section-cards');
     get_template_part( 'template-parts/section-reviews');
     get_template_part( 'template-parts/section-hero');
+    get_template_part( 'template-parts/section-trust');
   ?>
 
 <p style="grid-column: span 12; text-align: center;">Created by <a href="http://digitalbrent.com/">DigitalBrent</a></p>
