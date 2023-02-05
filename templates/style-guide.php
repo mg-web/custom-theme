@@ -652,17 +652,26 @@ get_header();
 <section id="articles">
     <article>
       <header>
-        <h1>Article h1 in article header</h1>
+        <h1>Article H1 in Article Header</h1>
       </header>
 
       <div class="article-content">
         <p>
-          Some article text. With a bonus <a href="#">link</a> just for the hell of it. This is a regulare ol' div with the
-          <em>"article-content"</em> class. Deceivingly as or oh much yikes testy reminantly thick acutely trod tortoise darn
-          frenetically spelled interwove jay less alas alas and wherever along underneath lingeringly as contumacious directed along and.
+          All of the text in this section is contained inside an &lt;article&gt; tag. Articles can have their own &lt;header&gt; and &lt;footer&gt; tags.
+          In order to prevent confusion, the header and footer on this theme's articles were not given any classes or IDs. No styling has been added for
+          the natural header and footer elements. The styling for the site header and site footer can be found in their corresponding scss files. The site 
+          header is given the ID of "site-header" and the footer is given the ID "site-footer" to help further distinguish those from other headers & footers
+          across the site. All styling for the site wide header and footer has been added to those IDs. See "header.scss" & "footer.scss" for details. 
+          Here is a bonus <a href="#">link</a> just to show you what links look like inside articles.
         </p>
 
         <img class="alignleft" src="http://placekitten.com/220/220" alt="Test Image Cat" title="This is a cat!">
+
+        <p>
+          <b>Please Note:</b> This is what the articles look like at full width. Typically articles are displayed alongside
+          a sidebar or &lt;aside&gt; of some type. When the sidebar is added, that should reduce the amount of space these 
+          paragraphs take up. They should look a little meatier then and not so thin and stretched out like they do here.
+        </p>
 
         <p>
           This is more stuff inside a paragraph tag. Have you noticed how all the theme images are cats? I'm not really a
