@@ -18,7 +18,7 @@ $services = get_field('services','option');
                 $cls = $service['special_class'] ? "service " . $service['special_class'] : "service"; // Set additional special class if one has been added in the back end.
                 ?>
                     <div class="<?php echo $cls; ?>">
-                        <?php if($icon) { echo "<i class='" . $icon . "'>Hello!</i>"; } ?>
+                        <?php if($icon) { echo "<i class='" . $icon . "'></i>"; } ?>
                         <h3 class="service-name"><?php echo $name; ?></h3>
                         <p class="service-description"><?php echo $desc; ?></p>
                     </div>
