@@ -12,17 +12,17 @@
     </div>
 
     <div class="location">
-        General Heating & Air <!-- All of the fields in this widget should by dynamically loaded from the theme options. -->
-        21 Jump Street
+        General Heating & Air<br><!-- All of the fields in this widget should by dynamically loaded from the theme options. -->
+        21 Jump Street<br>
         Miami, FL 90210
-
+        <br>
         Phone: (123)456-7890
-
+        <br>
         License #: FL-76543-210
     </div>
 
     <div class="optional-widget">
-        
+
     </div>
 
     <nav id="quick-links">
