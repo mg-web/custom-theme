@@ -60,6 +60,12 @@ if( function_exists('acf_add_options_page') ) {
 	));
 
 	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Callout',
+		'menu_title'	=> 'Callout',
+		'parent_slug'	=> 'mediagistic',
+	));
+
+	acf_add_options_sub_page(array(
 		'page_title' 	=> 'Trust',
 		'menu_title'	=> 'Trust',
 		'parent_slug'	=> 'mediagistic',
@@ -236,3 +242,9 @@ if( function_exists('acf_add_options_page') ) {
 // 		'description' => '',
 // 	));
 // }
+
+function mg_custom_user_roles() {
+    add_role( 'mg_content', 'Content Writer', array( 'read' => true, 'level_0' => true ) );
+	add_role( 'mg_ds', 'Digital Strategist', array( 'read' => true, 'level_0' => true ) );
+}
+add_action( 'init', 'mg_custom_user_roles' );

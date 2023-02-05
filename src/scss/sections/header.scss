@@ -32,14 +32,14 @@
             min-height: 150px;
         }
     }
-}
 
-#tag-line {
+  .tag-line {
     display: none;
 
     @include xxl {
         margin-bottom: 0;
     }
+  }
 }
 
 #top-nav,

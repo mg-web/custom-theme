@@ -18,7 +18,7 @@
 
     <div class="site-branding">
         <img src="https://digitalbrent.com/generic-hvac.png" alt="Generic HVAC Logo" width="300" height="72">
-        <p id="tag-line">This is where the tagline would go if there were one, but there's not!</p>
+        <p class="tag-line">This is where the tagline would go if there were one, but there's not!</p>
     </div>
 
     <div id="header-ctas">
