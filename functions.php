@@ -249,13 +249,13 @@ function mg_custom_user_roles() {
 }
 add_action( 'init', 'mg_custom_user_roles' );
 
-function mg_check_site_settings() {
-	$posts = get_option( 'posts_per_page' );
+// function mg_check_site_settings() {
+// 	$posts = get_option( 'posts_per_page' );
 
-	if($posts == 10) {
-		update_option("posts_per_page", 5);
-	}
+// 	if($posts == 10) {
+// 		update_option("posts_per_page", 5);
+// 	}
 
-	echo get_option( 'posts_per_page' );
-}
-add_action( 'init', 'mg_check_site_settings' );
+// 	echo get_option( 'posts_per_page' );
+// }
+// add_action( 'init', 'mg_check_site_settings' );
