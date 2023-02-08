@@ -8,6 +8,10 @@
  * 
  * https://css-tricks.com/how-to-animate-the-details-element/
  */
+
+$faq = get_field('faq','option');
+$content = $callout['content'] ? $callout['content'] : FALSE;
+$btns = $callout['ctas'] ? $callout['ctas'] : FALSE;
 ?>
 
 <section class="mg-accordion">

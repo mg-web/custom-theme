@@ -712,7 +712,7 @@ get_header();
     </section>
 
   <?php
-    get_template_part( 'template-parts/section-accordion');
+    get_template_part( 'template-parts/section-faq');
     get_template_part( 'template-parts/section-cards');
     get_template_part( 'template-parts/section-reviews');
     get_template_part( 'template-parts/section-hero');

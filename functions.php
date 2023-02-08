@@ -66,6 +66,12 @@ if( function_exists('acf_add_options_page') ) {
 	));
 
 	acf_add_options_sub_page(array(
+		'page_title' 	=> 'FAQ',
+		'menu_title'	=> 'FAQ',
+		'parent_slug'	=> 'mediagistic',
+	));
+
+	acf_add_options_sub_page(array(
 		'page_title' 	=> 'Trust',
 		'menu_title'	=> 'Trust',
 		'parent_slug'	=> 'mediagistic',
