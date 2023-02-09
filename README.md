@@ -1,6 +1,7 @@
 Mediagistic Custom Theme
-Developed by the Mediagistic Web Team
 ===
+
+Developed by the Mediagistic Web Team
 
 The Mediagistic Custom WordPress Theme was developed exclusively to meet the needs and
 requirements of the Mediagistic web design team in building, maintaining, and developing
