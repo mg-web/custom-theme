@@ -1,0 +1,24 @@
+.mg-service-areas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.service-area {
+    font-size: 2rem;
+    color: $tertiary;
+    font-weight: bold;
+    flex-basis: 25%;
+    text-align: left;
+    position: relative;
+
+    &::before {
+        content: "V";
+        font-size: 12px;
+        left: -1.5em;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+}

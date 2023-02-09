@@ -4,7 +4,6 @@
     $subhead = $hero['subhead'] ? $hero['subhead'] : FALSE;
     $content = $hero['content'] ? $hero['content'] : FALSE;
     $btns = $hero['ctas'] ? $hero['ctas'] : FALSE;
-
 ?>
 
 <section class="mg-hero">

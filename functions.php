@@ -77,6 +77,12 @@ if( function_exists('acf_add_options_page') ) {
 		'parent_slug'	=> 'mediagistic',
 	));
 
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Service Areas',
+		'menu_title'	=> 'Service Areas',
+		'parent_slug'	=> 'mediagistic',
+	));
+
 	/**
 	 * The following code was what Socius wrote. The code above is what I added.
 	 */
