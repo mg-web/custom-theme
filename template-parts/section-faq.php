@@ -10,22 +10,21 @@
  */
 
 $faq = get_field('faq','option');
-$content = $callout['content'] ? $callout['content'] : FALSE;
-$btns = $callout['ctas'] ? $callout['ctas'] : FALSE;
 ?>
 
 <section class="mg-accordion">
     <h2>FAQ Section (Details Accordion)</h2>
 
+    <?php foreach( $faq as $qa ) { ?>
     <details>
-        <summary>This the first accordion item!</summary>
+        <summary><?php echo $qa['question']; ?></summary>
         <div class="detail-content">
-            Here is the content! As you can see from the code, this is just a regular paragraph 
-            tag. The rest of the code is comprised of the &lt;details&gt; tag (the container
-            for each item), and the &lt;summary&gt; tag (summary is the title of the accordion item).
+            <?php echo $qa['answer']; ?>
         </div>
     </details>
-    <details>
+    <?php } ?>
+
+    <!-- <details>
         <summary>This the second accordion item!</summary>
         <div class="detail-content">
             Here is the content! As you can see from the code, this is just a regular paragraph 
@@ -56,5 +55,5 @@ $btns = $callout['ctas'] ? $callout['ctas'] : FALSE;
             tag. The rest of the code is comprised of the &lt;details&gt; tag (the container
             for each item), and the &lt;summary&gt; tag (summary is the title of the accordion item).
         </div>
-    </details>
+    </details> -->
 </section>
