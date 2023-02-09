@@ -23,37 +23,4 @@ $faq = get_field('faq','option');
         </div>
     </details>
     <?php } ?>
-
-    <!-- <details>
-        <summary>This the second accordion item!</summary>
-        <div class="detail-content">
-            Here is the content! As you can see from the code, this is just a regular paragraph 
-            tag. The rest of the code is comprised of the &lt;details&gt; tag (the container
-            for each item), and the &lt;summary&gt; tag (summary is the title of the accordion item).
-        </div>
-    </details>
-    <details>
-        <summary>This the third accordion item!</summary>
-        <div class="detail-content">
-            Here is the content! As you can see from the code, this is just a regular paragraph 
-            tag. The rest of the code is comprised of the &lt;details&gt; tag (the container
-            for each item), and the &lt;summary&gt; tag (summary is the title of the accordion item).
-        </div>
-    </details>
-    <details>
-        <summary>This the fourth accordion item!</summary>
-        <div class="detail-content">
-            Here is the content! As you can see from the code, this is just a regular paragraph 
-            tag. The rest of the code is comprised of the &lt;details&gt; tag (the container
-            for each item), and the &lt;summary&gt; tag (summary is the title of the accordion item).
-        </div>
-    </details>
-    <details>
-        <summary>This the fifth accordion item!</summary>
-        <div class="detail-content">
-            Here is the content! As you can see from the code, this is just a regular paragraph 
-            tag. The rest of the code is comprised of the &lt;details&gt; tag (the container
-            for each item), and the &lt;summary&gt; tag (summary is the title of the accordion item).
-        </div>
-    </details> -->
 </section>
