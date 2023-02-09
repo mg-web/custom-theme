@@ -1,5 +1,5 @@
 Mediagistic Custom Theme
-Developed by Brent Blackwood
+Developed by the Mediagistic Web Team
 ===
 
 The Mediagistic Custom WordPress Theme was developed exclusively to meet the needs and
