@@ -10,10 +10,14 @@
 
 <header id="site-header">
     <nav id="top-nav">
-        <a href="#">Specials</a>
-        <a href="#">Blog</a>
-        <a href="#">FAQ</a>
-        <a href="#">About Us</a>
+        <?php 
+            wp_nav_menu(array( 
+                'theme_location'=>'top_nav', 
+                'container' => false,
+                'items_wrap' => '%3$s',
+                'walker' => new MG_Menu_Walker()
+            )); 
+        ?>
     </nav>
 
     <div class="site-branding">

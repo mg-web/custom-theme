@@ -261,6 +261,65 @@ function mg_custom_user_roles() {
 }
 add_action( 'init', 'mg_custom_user_roles' );
 
+
+function mg_register_nav_menu(){
+	register_nav_menus( array(
+		'top_nav' => __( 'Top Menu', 'mg_theme' ),
+		'main_nav' => __( 'Main Menu', 'mg_theme' ),
+		'quick_nav'  => __( 'Quick Nav', 'mg_theme' ),
+	) );
+}
+add_action( 'after_setup_theme', 'mg_register_nav_menu', 0 );
+
+
+class MG_Menu_Walker extends Walker_Nav_Menu { 
+	/**
+	 * MG Custom Menu Walker
+	 * https://awhitepixel.com/blog/wordpress-menu-walkers-tutorial/
+	 */
+	
+	function start_el(&$output, $item, $depth=0, $args=[], $id=0) {
+		/**
+		 * The line below is sample code for adding classes from the WordPress Menu backend.
+		 * Please note: The "container" for most menus and the "items_wrap" are both typically
+		 * disabled when calling a menu with wp_nav_menu(). For example:
+		 * 
+		 * wp_nav_menu(array( 
+		 *    'theme_location'=>'top_nav', 
+         *    'container' => false,  <- Disables container.
+         *    'items_wrap' => '%3$s', <- Disables <ul> wrap since we are using nav, span, and achor tags only.
+         *    'walker' => new MG_Menu_Walker()
+         * )); 
+		 * 
+		 * $output .= "<div class='" .  implode(" ", $item->classes) . "'>";
+		 */
+ 
+		if ($item->url && $item->url != '#') {
+			$output .= '<a href="' . $item->url . '">';
+		} else {
+			$output .= '<span>';
+		}
+ 
+		$output .= $item->title;
+ 
+		if ($item->url && $item->url != '#') {
+			$output .= '</a>';
+		} else {
+			$output .= '</span>';
+		}
+	}
+
+	function start_lvl(&$output, $depth=0, $args=null) { 
+		$output .="<nav class='submenu'>";
+	}
+
+	function end_lvl(&$output, $depth=0, $args=null) { 
+		$output .="</nav>";
+	}
+}
+
+
+
 // function mg_check_site_settings() {
 // 	$posts = get_option( 'posts_per_page' );
 
