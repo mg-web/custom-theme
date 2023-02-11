@@ -299,6 +299,12 @@ class MG_Menu_Walker extends Walker_Nav_Menu {
 		} else {
 			$output .= '<span>';
 		}
+
+		if ($item->url && $item->url != '#') {
+			$output .= '<a href="' . $item->url . '">';
+		} else {
+			$output .= '<span>';
+		}
  
 		$output .= $item->title;
  
