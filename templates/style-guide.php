@@ -720,6 +720,7 @@ get_header();
     get_template_part( 'template-parts/section-trust');
     get_template_part( 'template-parts/section-callout');
     get_template_part( 'template-parts/section-service-areas');
+    get_template_part( 'template-parts/section-contact-form');
   ?>
 
 <p style="grid-column: span 12; text-align: center;">Created by <a href="http://digitalbrent.com/">DigitalBrent</a></p>

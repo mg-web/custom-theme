@@ -59,7 +59,10 @@ details { // Should this go in accordion.scss?
     }
 }
 
-input[type='text'] {
+input[type='text'],
+input[type='tel'], 
+input[type='email'],
+textarea {
     border: none;
     padding: 0.25em 0.35em 0.15em;
     border-radius: 5px;
