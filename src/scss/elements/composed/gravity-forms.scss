@@ -1,0 +1,11 @@
+.gfield_validation_message {
+    border-radius: 5px;
+}
+
+.gform_footer {
+    justify-content: center;
+}
+
+input[type='submit'].gform_button {
+    @extend .btn;
+}
