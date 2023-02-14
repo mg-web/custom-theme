@@ -1,10 +1,10 @@
 <?php
 /**
- * socius_custom functions and definitions
+ * mg_custom functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package socius_custom
+ * @package mg_custom
  */
 
 /**
@@ -14,14 +14,14 @@
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function socius_custom_setup() {
+function mg_custom_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on socius_custom, use a find and replace
-	 * to change 'socius_custom' to the name of your theme in all the template files.
+	 * If you're building a theme based on mg_custom, use a find and replace
+	 * to change 'mg_custom' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain( 'socius_custom', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'mg_custom', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -43,13 +43,13 @@ function socius_custom_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'top' => esc_html__( 'Top', 'socius_custom' ),
-		'primary' => esc_html__( 'Primary', 'socius_custom' ),
-		'footer-1' => esc_html__( 'Footer 1', 'socius_custom' ),
-		'footer-2' => esc_html__( 'Footer 2', 'socius_custom' ),
-		'footer-3' => esc_html__( 'Footer 3', 'socius_custom' ),
-		'copyright' => esc_html__( 'copyright', 'socius_custom' ),
-		'error-page' => esc_html__( '404 Page', 'socius_custom' ),
+		'top' => esc_html__( 'Top', 'mg_custom' ),
+		'primary' => esc_html__( 'Primary', 'mg_custom' ),
+		'footer-1' => esc_html__( 'Footer 1', 'mg_custom' ),
+		'footer-2' => esc_html__( 'Footer 2', 'mg_custom' ),
+		'footer-3' => esc_html__( 'Footer 3', 'mg_custom' ),
+		'copyright' => esc_html__( 'copyright', 'mg_custom' ),
+		'error-page' => esc_html__( '404 Page', 'mg_custom' ),
 	) );
 
 	/*
@@ -65,7 +65,7 @@ function socius_custom_setup() {
 	) );
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'socius_custom_custom_background_args', array(
+	add_theme_support( 'custom-background', apply_filters( 'mg_custom_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
@@ -73,7 +73,7 @@ function socius_custom_setup() {
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
 }
-add_action( 'after_setup_theme', 'socius_custom_setup' );
+add_action( 'after_setup_theme', 'mg_custom_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -82,12 +82,12 @@ add_action( 'after_setup_theme', 'socius_custom_setup' );
  *
  * @global int $content_width
  */
-if ( ! function_exists( 'socius_custom_content_width' ) ) :
-	function socius_custom_content_width() {
-		$GLOBALS['content_width'] = apply_filters( 'socius_custom_content_width', 640 );
+if ( ! function_exists( 'mg_custom_content_width' ) ) :
+	function mg_custom_content_width() {
+		$GLOBALS['content_width'] = apply_filters( 'mg_custom_content_width', 640 );
 	}
 endif;
-add_action( 'after_setup_theme', 'socius_custom_content_width', 0 );
+add_action( 'after_setup_theme', 'mg_custom_content_width', 0 );
 
 
 /**
@@ -104,12 +104,12 @@ add_action( 'wp_before_admin_bar_render', 'wpse200296_before_admin_bar_render' )
 /**
  * Add a pingback url auto-discovery header for singularly identifiable articles.
  */
-function socius_custom_pingback_header() {
+function mg_custom_pingback_header() {
 	if ( is_singular() && pings_open() ) {
 		echo '<link rel="pingback" href="', esc_url( get_bloginfo( 'pingback_url' ) ), '">';
 	}
 }
-add_action( 'wp_head', 'socius_custom_pingback_header' );
+add_action( 'wp_head', 'mg_custom_pingback_header' );
 
 /**
 * Modify Editor role

@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package socius_custom
+ * @package mg_custom
  */
 
 get_header(); ?>

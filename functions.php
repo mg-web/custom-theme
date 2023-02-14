@@ -48,40 +48,47 @@ if( function_exists('acf_add_options_page') ) {
 	));
 
 	acf_add_options_sub_page(array(
-		'page_title' 	=> 'Hero',
-		'menu_title'	=> 'Hero',
+		'page_title' 	=> 'Section Content',
+		'menu_title'	=> 'Section Content',
+		'menu_slug'		=> 'section_content',
 		'parent_slug'	=> 'mediagistic',
 	));
 
-	acf_add_options_sub_page(array(
-		'page_title' 	=> 'Services',
-		'menu_title'	=> 'Services',
-		'parent_slug'	=> 'mediagistic',
-	));
+	// acf_add_options_sub_page(array(
+	// 	'page_title' 	=> 'Hero',
+	// 	'menu_title'	=> 'Hero',
+	// 	'parent_slug'	=> 'sections',
+	// ));
 
-	acf_add_options_sub_page(array(
-		'page_title' 	=> 'Callout',
-		'menu_title'	=> 'Callout',
-		'parent_slug'	=> 'mediagistic',
-	));
+	// acf_add_options_sub_page(array(
+	// 	'page_title' 	=> 'Services',
+	// 	'menu_title'	=> 'Services',
+	// 	'parent_slug'	=> 'sections',
+	// ));
 
-	acf_add_options_sub_page(array(
-		'page_title' 	=> 'FAQ',
-		'menu_title'	=> 'FAQ',
-		'parent_slug'	=> 'mediagistic',
-	));
+	// acf_add_options_sub_page(array(
+	// 	'page_title' 	=> 'Callout',
+	// 	'menu_title'	=> 'Callout',
+	// 	'parent_slug'	=> 'sections',
+	// ));
 
-	acf_add_options_sub_page(array(
-		'page_title' 	=> 'Trust',
-		'menu_title'	=> 'Trust',
-		'parent_slug'	=> 'mediagistic',
-	));
+	// acf_add_options_sub_page(array(
+	// 	'page_title' 	=> 'FAQ',
+	// 	'menu_title'	=> 'FAQ',
+	// 	'parent_slug'	=> 'sections',
+	// ));
 
-	acf_add_options_sub_page(array(
-		'page_title' 	=> 'Service Areas',
-		'menu_title'	=> 'Service Areas',
-		'parent_slug'	=> 'mediagistic',
-	));
+	// acf_add_options_sub_page(array(
+	// 	'page_title' 	=> 'Trust',
+	// 	'menu_title'	=> 'Trust',
+	// 	'parent_slug'	=> 'sections',
+	// ));
+
+	// acf_add_options_sub_page(array(
+	// 	'page_title' 	=> 'Service Areas',
+	// 	'menu_title'	=> 'Service Areas',
+	// 	'parent_slug'	=> 'sections',
+	// ));
 
 	/**
 	 * The following code was what Socius wrote. The code above is what I added.

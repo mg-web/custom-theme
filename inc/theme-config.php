@@ -1,11 +1,11 @@
 <?php
 
 // Add admin stylesheet
-function socius_custom_enqueue_custom_admin_style() {
+function mg_custom_enqueue_custom_admin_style() {
 	wp_register_style( 'custom_wp_admin_css', get_template_directory_uri() . '/css/admin/admin-stylesheet.css', false, '1.0.0' );
 	wp_enqueue_style( 'custom_wp_admin_css' );
 }
-add_action( 'admin_enqueue_scripts', 'socius_custom_enqueue_custom_admin_style' );
+add_action( 'admin_enqueue_scripts', 'mg_custom_enqueue_custom_admin_style' );
 
 // Add editor stylesheet
 add_theme_support( 'editor-styles' );
@@ -14,7 +14,7 @@ add_editor_style( 'css/admin/editor-style.css' );
 /**
  * Enqueue scripts and styles.
  */
-function socius_custom_scripts() {
+function mg_custom_scripts() {
 	//Fonts
 	wp_enqueue_style( 'googlefonts', '//fonts.googleapis.com/css?family=Poppins:100,300,400,400i,500,600,700,800,900' );
 	
@@ -40,8 +40,8 @@ function socius_custom_scripts() {
 		}
     }
 }
-add_action( 'wp_enqueue_scripts', 'socius_custom_scripts' );
-add_action( 'admin_enqueue_scripts', 'socius_custom_scripts' );
+add_action( 'wp_enqueue_scripts', 'mg_custom_scripts' );
+add_action( 'admin_enqueue_scripts', 'mg_custom_scripts' );
 
 /**
  * Defer JS when possible
@@ -142,18 +142,18 @@ remove_action('wp_head', 'wp_generator');
 /**
  * Register widget area.
  */
-function socius_custom_widgets_init() {
+function mg_custom_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'socius_custom' ),
+		'name'          => esc_html__( 'Sidebar', 'mg_custom' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'socius_custom' ),
+		'description'   => esc_html__( 'Add widgets here.', 'mg_custom' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', 'socius_custom_widgets_init' );
+add_action( 'widgets_init', 'mg_custom_widgets_init' );
 
 
 /**

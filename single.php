@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package socius_custom
+ * @package mg_custom
  */
 
 get_header(); ?>
