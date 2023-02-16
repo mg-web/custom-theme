@@ -62,9 +62,9 @@
 
 #top-nav,
 #primary-nav {
-  a,
-  span,
-  div.dropdown {
+  & > a,
+  & > span,
+  & > div.dropdown {
     display: flex;
     height: 100%;
     align-items: center;
@@ -112,6 +112,10 @@
   z-index: 1;
   text-align: right;
   flex-direction: column;
+
+  a {
+    display: block;
+  }
 }
 
 
