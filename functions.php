@@ -297,14 +297,10 @@ class MG_Menu_Walker extends Walker_Nav_Menu {
          *    'items_wrap' => '%3$s', <- Disables <ul> wrap since we are using nav, span, and achor tags only.
          *    'walker' => new MG_Menu_Walker()
          * )); 
-		 * 
-		 * $output .= "<div class='" .  implode(" ", $item->classes) . "'>";
 		 */
- 
-		if ($item->url && $item->url != '#') {
-			$output .= '<a href="' . $item->url . '">';
-		} else {
-			$output .= '<span>';
+
+		if( $item->current_item_parent == 1 ) {
+			$output .= "<div class='dropdown'>";
 		}
 
 		if ($item->url && $item->url != '#') {
@@ -320,6 +316,10 @@ class MG_Menu_Walker extends Walker_Nav_Menu {
 		} else {
 			$output .= '</span>';
 		}
+
+		// echo "<pre>";
+		// print_r($item);
+		// echo "</pre>";
 	}
 
 	function start_lvl(&$output, $depth=0, $args=null) { 
@@ -328,6 +328,7 @@ class MG_Menu_Walker extends Walker_Nav_Menu {
 
 	function end_lvl(&$output, $depth=0, $args=null) { 
 		$output .="</nav>";
+		$output .="</div>"; // Close 'dropdown' class.
 	}
 }
 

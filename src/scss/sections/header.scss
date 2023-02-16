@@ -57,16 +57,20 @@
     a,
     span {
         margin-left: 15px;
-        color: $white;
-        text-decoration: none;
-
-        &:hover ~ .submenu {
-          display: block;
-          position: absolute;
-          bottom: 0;
-          left: 0;
-        }
     }
+}
+
+#top-nav,
+#primary-nav {
+  a,
+  span,
+  div.dropdown {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    text-decoration: none;
+    color: $white;
+  }
 }
 
 #top-nav {
@@ -89,8 +93,25 @@
     clip-path: polygon(50px 0, 100% 0%, 100% 100%, 0% 100%);
 }
 
+.dropdown {
+  position: relative;
+
+  &:hover {
+    .submenu {
+      display: flex;
+    }
+  }
+}
+
 .submenu {
   display: none;
+  background: $black;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 1;
+  text-align: right;
+  flex-direction: column;
 }
 
 
