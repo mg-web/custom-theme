@@ -717,6 +717,7 @@ get_header();
     get_template_part( 'template-parts/section-reviews');
     get_template_part( 'template-parts/section-hero');
     get_template_part( 'template-parts/section-services');
+    get_template_part( 'template-parts/section-txt-img');
     get_template_part( 'template-parts/section-trust');
     get_template_part( 'template-parts/section-callout');
     get_template_part( 'template-parts/section-service-areas');

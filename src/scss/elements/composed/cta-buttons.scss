@@ -1,6 +1,11 @@
 // Additional btn class could have been extended but it's better for avoiding stylesheet bloat
 // to just use a single class and repeat it for all the elements that need to styled as buttons.
 
+.ctas-wrap {
+    display: flex;
+    gap: 15px;
+}
+
 button {
     text-decoration: none;
     border-radius: $corner_rounding;
