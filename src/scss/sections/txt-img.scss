@@ -1,0 +1,37 @@
+.mg-txt-img {
+    display: flex;
+    gap: 30px;
+
+    .text-content {
+        text-align: left;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .media-content {
+        width: 50%;
+
+        img {
+            height: auto;
+            width: 100%;
+        }
+    }
+}
+
+.mg-img-txt { 
+    // This is set up so that it follows the order of the elements in the class name.
+    // For example with this "img" appears first, and so will the image element, followed
+    // by the "txt" or text of the section. The two classes are the same, they just follow
+    // the order from the class name in order to make it easier for developers.
+    @extend .mg-txt-img;
+    
+    .text-content {
+        order: 2;
+    }
+
+    .media-content {
+        order: 1;
+    }
+}
