@@ -14,11 +14,13 @@
     position: relative;
 
     &::before {
-        content: "V";
+        content: "\f3c5";
         font-size: 12px;
         left: -1.5em;
         top: 50%;
         transform: translateY(-50%);
         position: absolute;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
     }
 }

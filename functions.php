@@ -348,3 +348,5 @@ class MG_Menu_Walker extends Walker_Nav_Menu {
 // 	echo get_option( 'posts_per_page' );
 // }
 // add_action( 'init', 'mg_check_site_settings' );
+
+
