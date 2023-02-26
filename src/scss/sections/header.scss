@@ -115,7 +115,7 @@
     align-self: flex-end;
     height: 50px;
 
-    &::before {
+    &::before { // This creates the triangle edge on the main menu.
       content: "";
       height: 100%;
       width: 52px;
