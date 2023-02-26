@@ -32,13 +32,14 @@
     </div>
 
     <nav id="primary-nav">
-        <a href="#">Heating</a>
-        <a href="#">Cooling</a>
-        <a href="#">Air Quality</a>
-        <a href="#">Systems</a>
-        <a href="#">Service Areas</a>
-        <a href="#">Financing</a>
-        <a href="#">Contact Us</a>
+        <?php 
+            wp_nav_menu(array( 
+                'theme_location'=>'main_nav', 
+                'container' => false,
+                'items_wrap' => '%3$s',
+                'walker' => new MG_Menu_Walker()
+            )); 
+        ?>
     </nav>
 
     <div id="mob-menu">

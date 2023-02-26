@@ -299,7 +299,11 @@ class MG_Menu_Walker extends Walker_Nav_Menu {
          * )); 
 		 */
 
-		if( $item->current_item_parent == 1 ) {
+		// if( $item->current_item_parent == 1 ) {
+		// 	$output .= "<div class='dropdown'>";
+		// }
+
+		if( in_array("menu-item-has-children", $item->classes )) {
 			$output .= "<div class='dropdown'>";
 		}
 
