@@ -94,6 +94,19 @@
     div.dropdown {
       display: block;
     }
+
+    .dropdown .submenu { // Second level dropdown - This is a submenu of a submenu.
+      left: 100%;
+      top: 0;
+      width: fit-content; // According to caniuse.com, fit-content has 96.88% browser support.
+
+      a,
+      span { // No further menu levels accepted so no need for another dropdown class here.
+        margin-left: 0;
+        padding-left: 15px;
+        text-align: right;
+      }
+    }
   }
 }
 

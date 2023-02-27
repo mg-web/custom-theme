@@ -13,7 +13,7 @@
 
 $social = get_field('mg_options','option')['social_media'];
 
-$social['insta'] ? $social['insta'] = "https://www.instagram.com/" . $social['insta'] : '';
+$social['insta'] ? $social['insta'] = "<a href='https://www.instagram.com/" . $social['insta'] . "'><i class='fa-brands fa-square-instagram'>Is this working?</i></a>" : '';
 $social['twitter'] ? $social['twitter'] = "https://twitter.com/" . $social['twitter'] : '';
 $social['pinterest'] ? $social['pinterest'] = "https://pinterest.com/" . $social['pinterest'] : '';
 ?>
