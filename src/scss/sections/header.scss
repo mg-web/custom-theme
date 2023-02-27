@@ -64,7 +64,7 @@
 #primary-nav {
   & a,
   & span,
-  & div.dropdown {
+  & .dropdown {
     display: flex;
     height: 100%;
     align-items: center;
@@ -91,20 +91,29 @@
   
     a,
     span,
-    div.dropdown {
+    .dropdown {
       display: block;
     }
 
-    .dropdown .submenu { // Second level dropdown - This is a submenu of a submenu.
-      left: 100%;
-      top: 0;
-      width: fit-content; // According to caniuse.com, fit-content has 96.88% browser support.
+    .dropdown { // Second level dropdown - This is a dropdown inside of a dropdown.
+      &:hover {
+        .submenu {
+          display: flex;
+        }
+      }
 
-      a,
-      span { // No further menu levels accepted so no need for another dropdown class here.
-        margin-left: 0;
-        padding-left: 15px;
-        text-align: right;
+      .submenu { 
+        left: 100%;
+        top: 0;
+        width: fit-content; // According to caniuse.com, fit-content has 96.88% browser support.
+        display: none;
+
+        a,
+        span { // No further menu levels accepted so no need for another dropdown class here.
+          margin-left: 0;
+          padding-left: 15px;
+          text-align: right;
+        }
       }
     }
   }
