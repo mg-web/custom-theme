@@ -10,7 +10,7 @@ const postcss = require('gulp-postcss');
 const replace = require('gulp-replace');
 const sass = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
-const uglify = require('gulp-uglify');
+const terser = require('gulp-terser');
 const onError = function (err) {
     notify.onError({
         title: "Error!",
@@ -43,7 +43,7 @@ function scss() {
 function vendor_js() {
     return src('src/js/vendor/*.js')
         .pipe(plumber({ errorHandler: onError }))
-        .pipe(uglify())
+        .pipe(terser())
         .pipe(concat('vendor.min.js'))
         .pipe(dest('dist/js')
     );
@@ -52,7 +52,7 @@ function vendor_js() {
 function js() {
     return src('src/js/*.js')
         .pipe(plumber({ errorHandler: onError }))
-        .pipe(uglify())
+        .pipe(terser())
         .pipe(concat('main.min.js'))
         .pipe(dest('dist/js')
     );
