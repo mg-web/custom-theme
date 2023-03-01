@@ -6,6 +6,9 @@
  * There should never be more than 1 instance of "site-header" so it is not appropriate
  * to use a class here.
  */
+
+ $hdr= get_field('hdr_ctas','option');
+ $btns = $hdr['ctas'] ? $hdr['ctas'] : FALSE;
 ?>
 
 <header id="site-header">
@@ -26,9 +29,24 @@
     </div>
 
     <div id="header-ctas">
-        <a class="btn cta-2" href="#">Whatever</a>
-        <a class="btn cta-2" href="#">Something Else</a>
-        <a class="btn cta-1" href="#">Call Now</a>
+        <!-- <a class="btn cta-2" href="#">Review Us on Google</a>
+        <a class="btn cta-2" href="#">Schedule an Appointment</a>
+        <a class="btn cta-1" href="#">Call Now</a> -->
+        <?php 
+            if($btns) {
+                echo "<div class='ctas-wrap'>";
+
+                foreach ($btns as $cta) {
+                    $style = $cta['cta_btn']['style'];
+                    $link = $cta['cta_btn']['link']['url'];
+                    $target = $cta['cta_btn']['link']['target'] ? $cta['cta_btn']['link']['target'] : '_self';
+                    $txt = $cta['cta_btn']['link']['title'] ? $cta['cta_btn']['link']['title'] : "Click Here!";
+                
+                    echo "<a class='btn " . $style . "' href='" . esc_html($link) . "' target='" . esc_html($target) . "'>" . esc_html($txt) . "</a>";
+                }
+                echo "</div>";        
+            };
+        ?>
     </div>
 
     <nav id="primary-nav">
