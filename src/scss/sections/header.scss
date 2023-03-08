@@ -59,8 +59,9 @@
         align-items: center;
     }
 
-    a,
-    span {
+    & > a,
+    & > span,
+    & > .dropdown {
         margin-left: 15px;
     }
 }
@@ -76,6 +77,8 @@
     text-decoration: none;
     color: $white;
     position: relative;
+    width: auto;
+    white-space: nowrap;
     
     &:hover {
       .submenu {
@@ -86,18 +89,29 @@
   
   .submenu {
     display: none;
-    background: $black;
+    // display: flex;
+    background: $grey;
     position: absolute;
     right: 0;
     top: 100%;
     z-index: 1;
     text-align: right;
     flex-direction: column;
-  
+
     a,
     span,
     .dropdown {
       display: block;
+    }
+  
+    & > a,
+    & > span,
+    & > .dropdown {
+      padding: 3px 5px 3px 20px;
+
+      &:not(:last-child) {
+        border-bottom: 2px solid $white;
+      }
     }
 
     .dropdown { // Second level dropdown - This is a dropdown inside of a dropdown.
@@ -112,6 +126,8 @@
         top: 0;
         width: fit-content; // According to caniuse.com, fit-content has 96.88% browser support.
         display: none;
+        // display: flex;
+        border-left: 2px solid white;
 
         a,
         span { // No further menu levels accepted so no need for another dropdown class here.
