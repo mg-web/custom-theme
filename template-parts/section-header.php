@@ -7,8 +7,8 @@
  * to use a class here.
  */
 
- $hdr= get_field('hdr_ctas','option');
- $btns = $hdr['ctas'] ? $hdr['ctas'] : FALSE;
+ $hdr = get_field('hdr_ctas','option');
+ $btns = $hdr ? $hdr : FALSE;
 ?>
 
 <header id="site-header">
@@ -37,12 +37,21 @@
                 echo "<div class='ctas-wrap'>";
 
                 foreach ($btns as $cta) {
-                    $style = $cta['cta_btn']['style'];
-                    $link = $cta['cta_btn']['link']['url'];
-                    $target = $cta['cta_btn']['link']['target'] ? $cta['cta_btn']['link']['target'] : '_self';
-                    $txt = $cta['cta_btn']['link']['title'] ? $cta['cta_btn']['link']['title'] : "Click Here!";
+                    $a_tag = $cta['a_tag'];
+                    $call_btn = $cta['call_btn'];
+                    $btn_target = $cta['btn_target'];
+                    $btn_txt = $cta['btn_txt'];
+                    $btn_link = $cta['btn_link'];
+                    $click_func = $cta['click_func'];
+                    $style = $cta['style'];
                 
-                    echo "<a class='btn " . $style . "' href='" . esc_html($link) . "' target='" . esc_html($target) . "'>" . esc_html($txt) . "</a>";
+                    if ( $a_tag && $btn_target ) {
+                        echo "<a class='btn " . $style . "' href='" . $btn_link . "' target='_blank'>" . $btn_txt . "</a>";
+                    } elseif ( $a_tag && !$btn_target ) {
+                        echo "<a class='btn " . $style . "' href='" . $btn_link . "'>" . $btn_txt . "</a>";
+                    } elseif ( $call_btn ) {
+                        echo "<a class='btn " . $style . "' href='tel:1234567890'>" . $btn_txt . "</a>";
+                    }
                 }
                 echo "</div>";        
             };
