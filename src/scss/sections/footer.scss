@@ -9,3 +9,13 @@
         filter: brightness(0) invert(1);
     }
 }
+
+#quick-links {
+    display: flex;
+    flex-direction: column;
+    
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+}
