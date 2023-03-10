@@ -19,7 +19,6 @@ get_template_part( 'template-parts/social-menu');
 ?>
 
 <p style="grid-column: span 12; text-align: center;">Created by <a href="http://digitalbrent.com/">DigitalBrent</a></p>
-</div>
 
 <script>
   let swatches = jQuery(".swatch-block");
