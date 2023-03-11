@@ -6,7 +6,7 @@
     $btns = $hero['ctas'] ? $hero['ctas'] : FALSE;
 ?>
 
-<section class="mg-hero">
+<section id="mg-hero">
     <div class="wrap">
         <h1><?php if($heading) { echo $heading; }; ?></h1>
         <h2><?php if($subhead) { echo $subhead; }; ?></h2>
