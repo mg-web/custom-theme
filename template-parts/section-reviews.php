@@ -4,7 +4,7 @@
  */
 ?>
 
-<section class="mg-reviews">
+<section id="mg-reviews">
     <h2>Reviews Section</h2>
-    <?php echo do_shortcode("[egpr_reviews id=34]"); ?>
+    <?php echo do_shortcode("[trustindex no-registration=google]"); ?>
 </section>
