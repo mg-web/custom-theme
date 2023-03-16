@@ -8,7 +8,9 @@
  */
 
 get_header(); ?>
-<!-- Trying to create a merge conflict over here... -->
+
+<!-- Now I'm gonna put another comment here, just for fun. -->
+
     <div class="container-fluid">
         <div class="row justify-content-center">
 

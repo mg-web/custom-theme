@@ -8,6 +8,7 @@
  */
 
 get_header(); ?>
+<!-- This looks like a weird place to put a comment. -->
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
             <div class="error-page">
