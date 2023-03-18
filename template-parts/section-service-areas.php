@@ -1,16 +1,16 @@
 <?php
-    $areas = get_field('service_areas','option');
+$areas = get_field('service_areas','option');
 ?>
 
 <section class="mg-service-areas">
     <?php 
-        foreach( $areas as $sa ) {
-            if( $sa['has_link'] ) {
-                echo "<a class='service-area' href='" . $sa['link'] . "'>" . $sa['location'] . "</a>";
-            } else {
-                echo "<span class='service-area'>" . $sa['location'] . "</span>";
-            }
-        }; 
+    foreach( $areas as $sa ) :
+        if( $sa['has_link'] ) : ?>
+            <a class="service-area" href="<?php echo $sa['link']; ?>"><?php echo $sa['location']; ?></a>
+        <?php else : ?>
+            <span class="service-area"><?php echo $sa['location']; ?></span>
+        <?php endif;
+    endif; 
     ?>
 </section>
                     
