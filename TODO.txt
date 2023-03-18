@@ -1,15 +1,38 @@
 This is where we will keep track of the individual responsibilities.
 
 Brent:
+• Oversee git repo.
+• Section design.
+• Document processes.
+• Check code.
 
 Dana:
+• Page speed
+• Ensure accessibility standards.
+• Coordinate with Brent on server and/or administrative technologies.
 
 Jenny:
+• Font Awesome integration.
+• Section design.
+• Manage JS assets.
+• Help Katherine if needed with PHP integration.
 
 Jen:
+• Help Paige to populate fields.
+• SCSS curation.
+• Ensure accessibility standards.
+• Section design.
 
 Katherine:
+• ACF field integration.
+• Ensure PHP coding conformity and standards.
+• Section design.
 
 Kathleen:
+• Help build and populate fields.
+• Section design.
+• Help manage github repos for additional sections.
 
-Paige: Paige is super cool
+Paige:
+• Building out remaining fields and maintaining consistency of field stucture.
+• Help populate fields as needed.
