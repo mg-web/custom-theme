@@ -1,17 +1,16 @@
 <?php
-    $trust = get_field('trust','option');
-    // $seals = $trust['seals'] ? $trust['heading'] : FALSE;
+$trust = get_field('trust','option');
  
-    // if($content) {echo $content; }; 
-    if($trust) {
-        echo "<section class='mg-trust'>";
-        foreach ($trust as $seal) {
+if($trust) :
+?>
+    <section class='mg-trust'>
+        <?php
+        foreach ($trust as $seal) :
             $logo = $seal['seal'];
-        
             echo "<img src='" . esc_url($logo['url']) . "' alt='" . esc_attr($logo['alt']) . "' />";
-        }
-        echo "</div>";        
-    };
-    ?>
+        endforeach;
+        ?>
+    </div>        
+<?php endif; ?>
 </section>
                     
