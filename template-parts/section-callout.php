@@ -1,8 +1,10 @@
 <?php
+/**
+ * Call out section should probably be reclassed as "mg-full-txt".
+ */
     $callout = get_field('callout','option');
     $content = $callout['content'] ? $callout['content'] : FALSE;
     $btns = $callout['ctas'] ? $callout['ctas'] : FALSE;
-
 ?>
 
 <section class="mg-callout">
