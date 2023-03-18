@@ -15,12 +15,12 @@ $faq = get_field('faq','option');
 <section class="mg-accordion">
     <h2>FAQ Section (Details Accordion)</h2>
 
-    <?php foreach( $faq as $qa ) { ?>
-    <details>
-        <summary><?php echo $qa['question']; ?></summary>
-        <div class="detail-content">
-            <?php echo $qa['answer']; ?>
-        </div>
-    </details>
-    <?php } ?>
+    <?php foreach( $faq as $qa ) : ?>
+        <details>
+            <summary><?php echo $qa['question']; ?></summary>
+            <div class="detail-content">
+                <?php echo $qa['answer']; ?>
+            </div>
+        </details>
+    <?php endforeach ?>
 </section>
