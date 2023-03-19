@@ -12,7 +12,7 @@ get_template_part( 'template-parts/section-reviews');
 get_template_part( 'template-parts/section-services');
 get_template_part( 'template-parts/section-txt-img');
 get_template_part( 'template-parts/section-trust');
-get_template_part( 'template-parts/section-callout');
+get_template_part( 'template-parts/section-callout'); // Full width text.
 get_template_part( 'template-parts/section-service-areas');
 get_template_part( 'template-parts/section-contact-form');
 get_template_part( 'template-parts/social-menu');

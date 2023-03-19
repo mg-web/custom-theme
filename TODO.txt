@@ -1,38 +1,77 @@
 This is where we will keep track of the individual responsibilities.
 
-Brent:
+===== Brent ========================================================
 • Oversee git repo.
 • Section design.
 • Document processes.
 • Check code.
+    
+    Sections:
+    • Header
+    • Hero
+    • Forms
+    • Social Menu
 
-Dana:
+
+===== Dana ========================================================
 • Page speed
 • Ensure accessibility standards.
 • Coordinate with Brent on server and/or administrative technologies.
 
-Jenny:
+    Sections:
+    • Footer
+    • Service Areas
+    • Gallery
+
+
+===== Jenny ========================================================
 • Font Awesome integration.
 • Section design.
 • Manage JS assets.
 • Help Katherine if needed with PHP integration.
 
-Jen:
+    Sections:
+    • Forms
+    • Gallery
+
+
+===== Jen ========================================================
 • Help Paige to populate fields.
 • SCSS curation.
 • Ensure accessibility standards.
 • Section design.
 
-Katherine:
+    Sections:
+    • Hero & Banner
+    • Services
+    • Reviews
+    • Trust (Often times erroniously referred to as "Validations").
+
+===== Katherine ========================================================
 • ACF field integration.
 • Ensure PHP coding conformity and standards.
 • Section design.
 
-Kathleen:
+    Sections:
+    • Full Width Text
+    • Text & Image
+
+
+===== Kathleen ========================================================
 • Help build and populate fields.
 • Section design.
 • Help manage github repos for additional sections.
 
-Paige:
+    Sections:
+    • Cards
+    • FAQ (Accordions)
+    • Future sections (keep track of what needs to be added)
+
+
+===== Paige ========================================================
 • Building out remaining fields and maintaining consistency of field stucture.
 • Help populate fields as needed.
+
+    Sections:
+    • Financing
+    • Why Choose Us?
