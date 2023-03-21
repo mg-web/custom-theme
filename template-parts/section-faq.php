@@ -12,7 +12,7 @@
 $faq = get_field('faq','option');
 ?>
 
-<section class="mg-accordion">
+<section class="mg-accordion mg-test">
     <h2>FAQ Section (Details Accordion)</h2>
 
     <?php foreach( $faq as $qa ) : ?>
