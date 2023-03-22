@@ -14,7 +14,7 @@ $btns = $hero['ctas'] ? $hero['ctas'] : FALSE;
         if($content) {echo $content; }; 
         if($btns) :
         ?>
-            <div class='ctas-wrap'>";
+            <div class='ctas-wrap'>
                 <?php
                 foreach ($btns as $cta) :
                     $style = $cta['cta_btn']['style'];
