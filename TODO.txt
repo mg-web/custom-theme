@@ -17,6 +17,7 @@ This is where we will keep track of the individual responsibilities.
 • Page speed
 • Ensure accessibility standards.
 • Coordinate with Brent on server and/or administrative technologies.
+• Help ensure all the features of our current system are brought over.
 
     Sections:
     • Footer
@@ -66,8 +67,6 @@ This is where we will keep track of the individual responsibilities.
     • Cards
     • FAQ (Accordions)
     • Future sections (keep track of what needs to be added)
-
-    Kathleen was here.
 
 
 ===== Paige ========================================================
