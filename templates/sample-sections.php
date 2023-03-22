@@ -13,9 +13,9 @@ get_template_part( 'template-parts/section-services');
 get_template_part( 'template-parts/section-txt-img');
 get_template_part( 'template-parts/section-trust');
 get_template_part( 'template-parts/section-callout'); // Full width text.
-get_template_part( 'template-parts/section-service-areas');
-get_template_part( 'template-parts/section-contact-form');
-get_template_part( 'template-parts/social-menu');
+// get_template_part( 'template-parts/section-service-areas');
+// get_template_part( 'template-parts/section-contact-form');
+// get_template_part( 'template-parts/social-menu');
 ?>
 
 <p style="grid-column: span 12; text-align: center;">Created by <a href="http://digitalbrent.com/">DigitalBrent</a></p>
