@@ -16,7 +16,7 @@ $btns = $hero['ctas'] ? $hero['ctas'] : FALSE;
         ?>
             <div class='ctas-wrap'>";
                 <?php
-                foreach ($btns as $cta) {
+                foreach ($btns as $cta) :
                     $style = $cta['cta_btn']['style'];
                     $link = $cta['cta_btn']['link']['url'];
                     $target = $cta['cta_btn']['link']['target'] ? $cta['cta_btn']['link']['target'] : '_self';
