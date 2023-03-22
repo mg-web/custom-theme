@@ -67,6 +67,8 @@ This is where we will keep track of the individual responsibilities.
     • FAQ (Accordions)
     • Future sections (keep track of what needs to be added)
 
+    Kathleen was here.
+
 
 ===== Paige ========================================================
 • Building out remaining fields and maintaining consistency of field stucture.
