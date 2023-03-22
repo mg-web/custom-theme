@@ -162,10 +162,10 @@
       content: "";
       height: 100%;
       width: 52px;
-      background: $secondary;
+      background: $white;
       position: absolute;
-      left: -52px;
-      clip-path: polygon(50px 0, 100% 0%, 100% 100%, 0% 100%);
+      left: 0;
+      clip-path: polygon(100% 0, 0 0, 0 100%);
     }
 }
 
