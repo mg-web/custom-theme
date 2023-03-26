@@ -10,22 +10,34 @@
     box-shadow: 0 0 10px $grey;
     z-index: 10;
 
-    @include xxl {
+    @include lg {
         display: grid;
         padding: 0;
         background: $white;
         grid-template-rows: 40px auto 50px;
-        grid-template-columns: minmax(0, calc((100vw - $content_max_width) / 2)) 1fr minmax(100px, 300px) 1fr minmax(0, calc((100vw - $content_max_width) / 2));
+        grid-template-columns: 30px 1fr minmax(100px, 300px) 1fr 30px;
         grid-template-areas: // space-r & space-l are just filler columns.
         'top top top top top'
         'space-l brand ctas ctas space-r'
         'space-l brand space menu menu';
     }
 
+    @include xl {
+      display: grid;
+      padding: 0;
+      background: $white;
+      grid-template-rows: 40px auto 50px;
+      grid-template-columns: minmax(0, calc((100vw - $content_max_width) / 2)) 1fr minmax(100px, 300px) 1fr minmax(0, calc((100vw - $content_max_width) / 2));
+      grid-template-areas: // space-r & space-l are just filler columns.
+      'top top top top top'
+      'space-l brand ctas ctas space-r'
+      'space-l brand space menu menu';
+  }
+
     .site-branding {
         filter: brightness(0) invert(1);
 
-        @include xxl {
+        @include lg {
             filter: none;
             grid-area: brand;
             display: flex;
@@ -41,7 +53,7 @@
   .tag-line {
     display: none;
 
-    @include xxl {
+    @include lg {
         margin-bottom: 0;
     }
   }
@@ -53,7 +65,7 @@
     display: none;
     position: relative;
 
-    @include xxl {
+    @include lg {
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -145,6 +157,10 @@
     background: $primary;
     padding: 0 calc((100vw - $content_max_width) / 2);
     height: 40px;
+
+    @include lg {
+      padding: 0 30px;
+    }
 }
 
 #header-ctas {
@@ -195,7 +211,7 @@ $transition-delay: 0.05s;
   overflow: hidden;
   width: 100%;
 
-  @include xxl {
+  @include lg {
       display: none;
   }
 }

@@ -34,7 +34,6 @@ This is where we will keep track of the individual responsibilities.
     Sections:
     • Forms
     • Gallery
-    • I am the best
 
 
 ===== Jen ========================================================
@@ -48,6 +47,7 @@ This is where we will keep track of the individual responsibilities.
     • Services
     • Reviews
     • Trust (Often times erroniously referred to as "Validations").
+    
 
 ===== Katherine ========================================================
 • ACF field integration.
