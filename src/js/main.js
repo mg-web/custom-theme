@@ -1,6 +1,6 @@
 function header_height(){
     // Adjusts the 'margin-top' of the body to the height of the sticky header.
-    let headSize = jQuery('#site-header').height() + "px";
+    let headSize = jQuery('#masthead').height() + "px";
 
     jQuery('body').css('margin-top', headSize);
 }

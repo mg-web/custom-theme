@@ -660,7 +660,7 @@ get_header();
           All of the text in this section is contained inside an &lt;article&gt; tag. Articles can have their own &lt;header&gt; and &lt;footer&gt; tags.
           In order to prevent confusion, the header and footer on this theme's articles were not given any classes or IDs. No styling has been added for
           the natural header and footer elements. The styling for the site header and site footer can be found in their corresponding scss files. The site 
-          header is given the ID of "site-header" and the footer is given the ID "site-footer" to help further distinguish those from other headers & footers
+          header is given the ID of "masthead" and the footer is given the ID "colophon" to help further distinguish those from other headers & footers
           across the site. All styling for the site wide header and footer has been added to those IDs. See "header.scss" & "footer.scss" for details. 
           Here is a bonus <a href="#">link</a> just to show you what links look like inside articles.
         </p>
