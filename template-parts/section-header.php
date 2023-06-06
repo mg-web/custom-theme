@@ -3,7 +3,7 @@
  * Header section of the site. Please note: This is different from the header.php file
  * found in the site's root directory. Also take note that IDs are used instead of classes
  * in order to distinguish these elements as the only occurances of their kind on the site.
- * There should never be more than 1 instance of "site-header" so it is not appropriate
+ * There should never be more than 1 instance of "masthead" so it is not appropriate
  * to use a class here.
  */
 
@@ -11,7 +11,7 @@
  $btns = $hdr ? $hdr : FALSE;
 ?>
 
-<header id="site-header">
+<header id="masthead">
     <nav id="top-nav">
         <?php 
             wp_nav_menu(array( 

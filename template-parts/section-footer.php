@@ -1,11 +1,11 @@
 <?php
 /**
- * Site Footer. IDs used here also instead of classes. IDs are more appropriate because there should only ever
+ * Site Footer (colophon). IDs used here also instead of classes. IDs are more appropriate because there should only ever
  * be a single occurance of the site footer.
  */
 ?>
 
-<footer id="site-footer">
+<footer id="colophon">
     <div class="site-branding">
         <img src="https://digitalbrent.com/generic-hvac.png" alt="Generic HVAC Logo" width="300" height="72">
         <p class="tag-line">This is where the tagline would go if there were one, but there's not!</p>
