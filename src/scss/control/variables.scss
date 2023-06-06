@@ -47,12 +47,14 @@ they are closely associated to the color variables. */
     background: linear-gradient(135deg, $secondary, $accent_2);  
 }
 
-// 2. Typography
+// 2. Gradients
+
+// 3. Typography
 // https://web.dev/font-best-practices/
 
 
-// 3. Theme Spacing (padding / margins / gaps)
+// 4. Theme Spacing (padding / margins / gaps)
 $content_max_width: 1600px; // If vertical scrollbar is present it will be about 15px smaller.
 
-// 4. Other Variables
+// 5. Other Variables
 $corner_rounding: 10px;
