@@ -60,7 +60,7 @@
     </nav>
 
     <div class="site-branding">
-        <img id="company-logo" src="https://digitalbrent.com/generic-hvac.png" alt="Generic HVAC Logo" width="300" height="72">
+        <img src="https://digitalbrent.com/generic-hvac.png" alt="Generic HVAC Logo" width="300" height="72">
         <p class="tag-line">This is where the tagline would go if there were one, but there's not!</p>
     </div>
 

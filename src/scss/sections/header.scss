@@ -38,7 +38,7 @@
         filter: brightness(0) invert(1); /* Can't be used on every logo */
         align-self: flex-start;
         margin: 15px 30px;
-        align-self: flex-start;
+
 
         @include lg {
             filter: none;
