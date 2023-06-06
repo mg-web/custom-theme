@@ -36,8 +36,8 @@
 
     .site-branding {
         filter: brightness(0) invert(1); /* Can't be used on every logo */
-        margin: 15px 0;
-
+        margin: 15px 30px;
+        
 
         @include lg {
             filter: none;
