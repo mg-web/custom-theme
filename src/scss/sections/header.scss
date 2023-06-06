@@ -5,7 +5,6 @@
     background: $mg_red;
     padding: 12px 0 0;
     position: fixed;
-    width: 100vw;
     top: 0;
     box-shadow: 0 0 10px $grey;
     z-index: 10;
@@ -205,7 +204,7 @@ $transition-delay: 0.05s;
 
 #mob-menu {
   position: relative;
-  background-color: #3a3a3a;
+  background-color: #8e8e8e;
   overflow: hidden;
   width: 100%;
 

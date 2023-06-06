@@ -41,7 +41,7 @@
         <a href="#">FAQ</a>
         <a href="#">About Us</a>
     </nav>
-</header>
+</footer>
 
 <?php wp_footer(); ?>
 </body>
