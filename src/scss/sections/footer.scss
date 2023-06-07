@@ -1,9 +1,14 @@
 #colophon {
     display: flex;
+    flex-direction: column;
     background: $drk_grey;
     color: $white;
     padding: 30px 20% 44px;
     justify-content: space-between;
+
+    @include lg {
+        flex-direction: row;
+    }
 
     .site-branding {
         filter: brightness(0) invert(1);
