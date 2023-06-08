@@ -17,6 +17,8 @@
  $state = $ftr['address']['state'];
  $zip = $ftr['address']['zip_code'];
  $lic = $ftr['general']['license'] ? "<div class='license'>" . $ftr['general']['license'] . "</div>" : '';
+ $copyYear = 2008; // Set website start date. Make this an option in ACF later.
+ $curYear = date('Y');
 ?>
 
 <footer id="colophon">
@@ -44,7 +46,8 @@
         <a href="#">Contact</a>
         <a href="#">About Us</a>
     </nav>
-</footer>
+
+    <div id='copyright'>Copyright <?php echo $copyYear . (($copyYear != $curYear) ? '-' . $curYear : '') . " " . bloginfo('name'); ?></div>
 
 <?php wp_footer(); ?>
 </body>
