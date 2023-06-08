@@ -47,10 +47,16 @@
     a {
         color: $white;
         text-decoration: none;
+        font-size: 1.2rem;
+
+        &:not(:last-child) {
+            margin-bottom: 1em;
+        }
     }
 }
 
 #copyright {
     text-align: center;
     order: 4;
+    padding: 20px 30px;
 }
