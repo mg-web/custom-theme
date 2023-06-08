@@ -41,11 +41,11 @@
     </div>
 
     <nav id="quick-links">
-        <h4>Quick Links</h4>
         <a href="#">Site Map</a>
         <a href="#">Policy</a>
         <a href="#">Contact</a>
         <a href="#">About Us</a>
+        <a href="#">Something Else</a>
     </nav>
 
     <div id='copyright'>Copyright <?php echo $copyYear . "-" . $curYear . " " .get_bloginfo('name'); ?></div>
