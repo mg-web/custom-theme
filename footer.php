@@ -47,7 +47,7 @@
         <a href="#">About Us</a>
     </nav>
 
-    <div id='copyright'>Copyright <?php echo $copyYear . "-" . $curYear . " " .bloginfo('name'); ?></div>
+    <div id='copyright'>Copyright <?php echo $copyYear . "-" . $curYear . " " .get_bloginfo('name'); ?></div>
 
 <?php wp_footer(); ?>
 </body>
