@@ -3,29 +3,40 @@
     flex-direction: column;
     background: $slate;
     color: $white;
-    padding: 15px 30px 25px;
     justify-content: space-between;
     text-align: center;
 
     @include lg {
         flex-direction: row;
-        padding: 30px 20% 44px;
     }
 
     .site-branding {
         filter: brightness(0) invert(1);
+        order: 1;
+        padding: 15px 30px;
+
+        @include lg {
+            padding: 30px 20% 44px;
+        }
     }
 }
 
 .location {
     margin-bottom: 15px;
+    order: 2;
+    padding: 0px 30px;
 }
 
 
 
 #quick-links {
+    background: $secondary;
+    color: $black;
+    padding: 0px 30px 30px;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    order: 3;
 
     @include lg {
         flex-direction: column;

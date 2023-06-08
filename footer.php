@@ -36,7 +36,6 @@
     <?php } ?>
 
     <div class="optional-widget">
-
     </div>
 
     <nav id="quick-links">
