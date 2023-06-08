@@ -39,9 +39,9 @@
     </div>
 
     <nav id="quick-links">
-        <a href="#">Specials</a>
-        <a href="#">Blog</a>
-        <a href="#">FAQ</a>
+        <a href="#">Site Map</a>
+        <a href="#">Policy</a>
+        <a href="#">Contact</a>
         <a href="#">About Us</a>
     </nav>
 </footer>

@@ -30,16 +30,16 @@
 
 
 #quick-links {
-    background: $secondary;
+    background: $aux_2;
     color: $black;
     padding: 0px 30px 30px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    flex-direction: column;
     order: 3;
 
     @include lg {
-        flex-direction: column;
+        
     }
     
     a {
