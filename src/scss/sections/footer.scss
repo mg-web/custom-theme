@@ -19,20 +19,22 @@
             padding: 30px 20% 44px;
         }
     }
+
+    .location {
+        margin-bottom: 15px;
+        order: 2;
+        padding: 0px 30px;
+    }
+    
+    .license {
+        margin: 15px 0;
+    }
 }
-
-.location {
-    margin-bottom: 15px;
-    order: 2;
-    padding: 0px 30px;
-}
-
-
 
 #quick-links {
-    background: $aux_2;
+    background: linear-gradient($secondary, $aux_2);
     color: $black;
-    padding: 0px 30px 30px;
+    padding: 20px 30px;
     display: flex;
     align-items: center;
     flex-direction: column;
