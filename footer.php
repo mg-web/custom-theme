@@ -16,7 +16,7 @@
  $city = $ftr['address']['city'];
  $state = $ftr['address']['state'];
  $zip = $ftr['address']['zip_code'];
- $lic = $ftr['general']['license'] ? "<div class='license'>" . $ftr['general']['license'] . "</div>" : '';
+ $lic = $ftr['general']['license'] ? "<div class='license'>License:<br>" . $ftr['general']['license'] . "</div>" : '';
  $copyYear = 2008; // Set website start date. Make this an option in ACF later.
  $curYear = date('Y');
 ?>
@@ -41,6 +41,7 @@
     </div>
 
     <nav id="quick-links">
+        <h4>Quick Links</h4>
         <a href="#">Site Map</a>
         <a href="#">Policy</a>
         <a href="#">Contact</a>
