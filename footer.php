@@ -16,6 +16,7 @@
  $city = $ftr['address']['city'];
  $state = $ftr['address']['state'];
  $zip = $ftr['address']['zip_code'];
+ $lic = $ftr['general']['license'] ? "<div class='license'>" . $ftr['general']['license'] . "</div>" : '';
 ?>
 
 <footer id="colophon">
@@ -26,14 +27,11 @@
 
     <?php if( $addr ){ ?>
         <div class="location">
-            <div class='company-name'><?php bloginfo( 'name' ); ?></div>
             <div class='street'><?php echo $street1; ?></div>
             <?php echo $street2; ?>
-            Miami, FL 90210
-            <br>
+            <div class="city-stat-zip"></div>
             Phone: (123)456-7890
-            <br>
-            License #: FL-76543-210
+            <?php echo $lic; ?>
         </div>
     <?php } ?>
 
