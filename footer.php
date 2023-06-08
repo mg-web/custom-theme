@@ -31,7 +31,7 @@
         <div class="location">
             <div class='street'><?php echo $street1; ?></div>
             <?php echo $street2; ?>
-            <div class="city-stat-zip"></div>
+            <div class="city-stat-zip"><?php echo $city . ", " . $state . " " . $zip; ?></div>
             Phone: (123)456-7890
             <?php echo $lic; ?>
         </div>
