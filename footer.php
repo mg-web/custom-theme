@@ -40,15 +40,19 @@
     <div class="optional-widget">
     </div>
 
-    <nav id="quick-links">
-        <a href="#">Site Map</a>
-        <a href="#">Policy</a>
-        <a href="#">Contact</a>
-        <a href="#">About Us</a>
-        <a href="#">Something Else</a>
-    </nav>
+    <div id="sub-footer">
+        <h4>Quick Links</h4>
+        
+        <nav id="quick-links">
+            <a href="#">Site Map</a>
+            <a href="#">Policy</a>
+            <a href="#">Contact</a>
+            <a href="#">About Us</a>
+        </nav>
 
-    <div id='copyright'>Copyright <?php echo $copyYear . "-" . $curYear . " " .get_bloginfo('name'); ?></div>
+        <div id='copyright'>Copyright <?php echo $copyYear . "-" . $curYear . " " .get_bloginfo('name'); ?></div>
+    </div>
+</footer>
 
 <?php wp_footer(); ?>
 </body>

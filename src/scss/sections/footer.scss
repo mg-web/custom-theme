@@ -31,14 +31,19 @@
     }
 }
 
-#quick-links {
+#sub-footer {
     background: linear-gradient($secondary, $aux_2);
     color: $black;
     padding: 20px 30px;
+    order: 3;
+    text-align: center;
+}
+
+#quick-links {
     display: flex;
     align-items: center;
     flex-direction: column;
-    order: 3;
+    
 
     @include lg {
         
@@ -54,6 +59,4 @@
 
 #copyright {
     text-align: center;
-    order: 4;
-    padding: 20px 30px;
 }
