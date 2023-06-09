@@ -41,8 +41,8 @@
     </div>
 
     <div id="sub-footer">
-        <h4>Quick Links</h4>
-        
+        <h3>Quick Links</h3>
+
         <nav id="quick-links">
             <a href="#">Site Map</a>
             <a href="#">Policy</a>
